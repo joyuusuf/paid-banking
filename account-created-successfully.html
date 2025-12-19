@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account created Successfully</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/fav-icon.png" type="image/x-icon">
+
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <div class="reset_password_container">
+
+        <!-- mobile login and pattern -->
+        <div class="reset_password_mobile_logo">
+            <div class="reset_password_bo">
+              <img src="assets/images/Paidley-lo.png" alt="reset password mobile logo">
+              <!-- <img class="reset_password_mobile_partern" src="assets/images/mobile-bg-pattern.png" alt="mobile reset passowrd pattern"> -->
+              <img  class="reset_password_mobile_partern" src="assets/images/arrow-pattern.png" alt="reset password mobile logo">
+            </div>
+        </div>
+
+        <div class="reset_password_left">
+            <div class="reset_password_logo">
+                <img src="assets/images/Paidley-lo.png" alt="paidley logo">
+            </div>
+
+            <div class="reset_password_box">
+                <img src="assets/images/verify-illustration.png" alt="login mage">
+            </div>
+
+            <!-- <div class="reset_password_footer">
+                <p>&copy; Paidley <span class="year"></span></p>
+                <div class="reset_password_footer_right">
+                    <a href="#">Help Center</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div> -->
+
+            <div class="kyc_footer">
+                <div class="kyc_footer_main1">
+                    <p>&copy; Paidley <span  class="year"></span></p>
+                    <div class="kyc_footer_right">
+                        <a href="#">Help Center</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="reset_password_right">
+            <div class="account_created_successfully_container">
+                <div class="account_created_successfully_main">
+                    <div class="top-head">
+                        <h3>Account Created Successfully</h3>
+                        <p>Your account has been created successfully. Proceed to create transaction pin</p>
+                    </div>
+    
+                    <div class="account_created_successfully-image">
+                        <img src="assets/images/mark-done.png" alt="mark done">
+                    </div>
+    
+                    <button class="account_created_successfully_btn" type="button">Create pin now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- mobile footer section -->
+        <div class="reset_password_mobile_footer footer_320">
+            <div class="reset_password_mobile_footer_box">
+                <p>&copy; Paidley <span class="year"></span></p>
+                <div class="mobile_footer_flex">
+                    <a href="#">Help Center</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- GET YEAR -->
+    <script>
+        let currentYear = new Date().getFullYear();
+        document.querySelectorAll(".year").forEach(function (element) {
+            element.textContent = currentYear;
+        });
+    </script>
+
+   
+        
+    
+</body>
+</html>

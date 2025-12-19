@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id Card Uploaded Successfully</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/fav-icon.png" type="image/x-icon">
+
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+
+</head>
+<body>
+    <div class="kyc_container">
+        <!-- mobile logo and pattern -->
+        <div class="mobile_kyc_logo">
+            <div class="mobile_kyc_box">
+              <img src="assets/images/paidley-lo.png" alt="paidley mobile logo">
+              <!-- <img class="partern" src="assets/images/mobile-bg-pattern.png" alt="partern mage"> -->
+              <img class="partern" src="assets/images/arrow-pattern.png" alt="partern mage">
+            </div>
+        </div>
+
+
+        <div class="kyc_left">
+            <div class="kyc_logo">
+                <img src="assets/images/paidley-lo.png" alt="paidley logo">
+            </div>
+
+            <div class="image_box">
+                <img src="assets/images/kyc-illustration.png" alt=" kyc mage">
+            </div>
+
+            <div class="kyc_footer">
+                <div class="kyc_footer_main1">
+                     <p>&copy; Paidley <span class="year"></span></p>
+                     <div class="kyc_footer_right">
+                         <a href="#">Help Center</a>
+                         <a href="#">Terms of Service</a>
+                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="kyc_right">
+            <!-- ID UPLOAD SUCCESSFULLY -->
+            <div class="id_upload_successfully_container">
+                <div class="id_upload_successfully_main">
+                    <div class="top_head">
+                        <h4>You are all set up</h4>
+                    </div>
+
+                    <div class="id_upload_successfully_contents">
+                        <p>Your registration is now complete and <br> your verification is being reviewed.</p>
+
+                        <div class="id_mage_box">
+                            <img src="assets/images/mark-done.png" alt="">
+                        </div>
+
+                        <a href="./client-dashboard/index.html" class="id_upload_btn">Proceed to your Dashboard</a>
+                    </div>
+                </div>
+            </div>
+
+          
+         
+        </div>
+
+        <!-- mobile footer section -->
+        <div class="mobile_kyc_footer">
+            <div class="footer_box">
+                <p>&copy; Paidley <span class="year"></span></p>
+                <div class="mobile_footer_right">
+                    <a href="#">Help Center</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GET YEAR -->
+    <script>
+        let currentYear = new Date().getFullYear();
+        document.querySelectorAll(".year").forEach(function (element) {
+            element.textContent = currentYear;
+        });
+    </script>
+
+    
+</body>
+</html>

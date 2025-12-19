@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Receipt</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../assets/images/fav-icon.png" type="image/x-icon">
+
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="client-dashboard.css">
+
+    <!-- pdf libraray -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+
+    <div class="transaction_receipt_container" id="transactionReciptContainer">  
+        <div class="transaction_details_main receipt_bg">
+            <div class="transac-texts-box">
+                <img src="../assets/images/Paidley-lo.png" alt="">
+                <h4>Transaction Receipt</h4>
+            </div>
+            <div class="transaction_details_top_head">
+                <p class="p1">Amount</p>
+                <h3>&#8358;60,000.00</h3>
+                <div class="head_box">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.4997 24.0005C19.0531 24.0005 24.5 18.5651 24.5 12.0003C24.5 5.44695 19.041 0 12.4877 0C5.92336 0 0.5 5.44695 0.5 12.0003C0.5 18.5651 5.9349 24.0005 12.4997 24.0005ZM8.27662 17.2238C8.14527 17.2239 8.01518 17.1982 7.8938 17.148C7.77243 17.0978 7.66214 17.0241 7.56926 16.9312C7.47638 16.8384 7.40273 16.7281 7.35253 16.6067C7.30233 16.4853 7.27655 16.3552 7.27668 16.2239C7.27668 15.9533 7.39415 15.7179 7.58239 15.5412L11.0882 12.0123L7.58239 8.4824C7.48555 8.39708 7.40812 8.292 7.3553 8.17424C7.30248 8.05648 7.2755 7.92877 7.27618 7.79971C7.27618 7.25908 7.72344 6.82337 8.27662 6.82337C8.54719 6.82337 8.78261 6.92928 8.95931 7.11753L12.4882 10.6354L16.0417 7.10598C16.2415 6.89415 16.4533 6.79977 16.7123 6.79977C17.265 6.79977 17.7123 7.24704 17.7123 7.78867C17.7123 8.05873 17.6179 8.28261 17.4181 8.47085L13.8887 12.0118L17.4061 15.5181C17.5828 15.7063 17.7002 15.9418 17.7002 16.2239C17.7004 16.3552 17.6746 16.4853 17.6244 16.6067C17.5742 16.7281 17.5005 16.8384 17.4076 16.9312C17.3148 17.0241 17.2045 17.0978 17.0831 17.148C16.9617 17.1982 16.8316 17.2239 16.7003 17.2238C16.5708 17.2237 16.4426 17.1976 16.3234 17.147C16.2041 17.0965 16.0962 17.0226 16.0061 16.9297L12.4887 13.4003L8.9824 16.9297C8.89087 17.024 8.78109 17.0987 8.65976 17.1493C8.53842 17.1999 8.40807 17.2252 8.27662 17.2238Z" fill="#C91301"/>
+                    </svg>
+                        
+                    <p class="failed">Failed</p>
+                </div>
+            </div>
+
+            <div class="transaction_details_contents">
+                <div class="details_1">
+                    <p class="p1">Beneficiary Details</p>
+                    <div class="details_1_right">
+                        <h4>Peter Edwards</h4>
+                        <p>Opay | 8045798757</p>
+                    </div>
+                </div>
+
+                <div class="details_1">
+                    <p class="p1">Sender Details</p>
+                    <div class="details_1_right">
+                        <h4>John Okafor</h4>
+                        <p>Paidley | 1234567890</p>
+                    </div>
+                </div>
+
+                <div class="details_1">
+                    <p class="p1">Paid On</p>
+                    <div class="details_1_right">
+                        <h4>08 OCT 2024</h4>
+                        <p class="time">05:14 PM</p>
+                    </div>
+                </div>
+
+                <div class="details_2">
+                    <p>Fees</p>
+                    <h4 class="amount">&#8358;10</h4>
+                </div>
+
+                <div class="details_2">
+                    <p>Paid to</p>
+                    <h4>Bank</h4>
+                </div>
+
+                <div class="details_2">
+                    <p>Description</p>
+                    <h4>Upkeep</h4>
+                </div>
+
+                <div class="details_2">
+                    <p>Transaction Number</p>
+                    <h4>76543223456789</h4>
+                </div>
+
+                <div class="details_2">
+                    <p>Payment Type</p>
+                    <h4>Outward Transfer</h4>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- GET THE DOWNLOAD RECIPT BUTTON AND CONVERT TRANSACTION RECEIPT TO PDF -->
+    <script>
+        // JS for download receipt as PDF
+        document.querySelector('.download_receipt_btn').addEventListener('click', function() {
+            const receiptElement = document.getElementById('transactionReciptContainer');
+            
+            const options = {
+                margin: 1,
+                filename: 'Transaction-Receipt.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+            };
+    
+            html2pdf().from(receiptElement).set(options).save();
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,1808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cny Wallet</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../assets/images/fav-icon.png" type="image/x-icon">
+
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="client-dashboard.css">
+</head>
+<body>
+    <div class="client_dashboard_container">
+        <div class="client_dashboard_left">
+            <div class="paidley_logo">
+                <img src="../assets/images/dashboard-paidley-logo.png" alt="paidley logo">
+            </div>
+    
+            <div class="nav_links_box">
+                <a href="index.html">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_11000_54930)">
+                        <path d="M1.66602 5.0013C1.66602 3.42964 1.66602 2.64464 2.15435 2.1563C2.64268 1.66797 3.42768 1.66797 4.99935 1.66797C6.57102 1.66797 7.35602 1.66797 7.84435 2.1563C8.33268 2.64464 8.33268 3.42964 8.33268 5.0013V6.66797C8.33268 8.23964 8.33268 9.02463 7.84435 9.51297C7.35602 10.0013 6.57102 10.0013 4.99935 10.0013C3.42768 10.0013 2.64268 10.0013 2.15435 9.51297C1.66602 9.02463 1.66602 8.23964 1.66602 6.66797V5.0013ZM1.66602 15.8346C1.66602 15.058 1.66602 14.6696 1.79268 14.3638C1.87644 14.1615 1.99926 13.9776 2.15412 13.8227C2.30898 13.6679 2.49283 13.5451 2.69518 13.4613C3.00102 13.3346 3.38935 13.3346 4.16602 13.3346H5.83268C6.60935 13.3346 6.99768 13.3346 7.30352 13.4613C7.50587 13.5451 7.68972 13.6679 7.84458 13.8227C7.99944 13.9776 8.12225 14.1615 8.20602 14.3638C8.33268 14.6696 8.33268 15.058 8.33268 15.8346C8.33268 16.6113 8.33268 16.9996 8.20602 17.3055C8.12225 17.5078 7.99944 17.6917 7.84458 17.8465C7.68972 18.0014 7.50587 18.1242 7.30352 18.208C6.99768 18.3346 6.60935 18.3346 5.83268 18.3346H4.16602C3.38935 18.3346 3.00102 18.3346 2.69518 18.208C2.49283 18.1242 2.30898 18.0014 2.15412 17.8465C1.99926 17.6917 1.87644 17.5078 1.79268 17.3055C1.66602 16.9996 1.66602 16.6113 1.66602 15.8346ZM11.666 13.3346C11.666 11.763 11.666 10.978 12.1543 10.4896C12.6427 10.0013 13.4277 10.0013 14.9993 10.0013C16.571 10.0013 17.356 10.0013 17.8443 10.4896C18.3327 10.978 18.3327 11.763 18.3327 13.3346V15.0013C18.3327 16.573 18.3327 17.358 17.8443 17.8463C17.356 18.3346 16.571 18.3346 14.9993 18.3346C13.4277 18.3346 12.6427 18.3346 12.1543 17.8463C11.666 17.358 11.666 16.573 11.666 15.0013V13.3346ZM11.666 4.16797C11.666 3.3913 11.666 3.00297 11.7927 2.69714C11.8764 2.49479 11.9993 2.31093 12.1541 2.15607C12.309 2.00122 12.4928 1.8784 12.6952 1.79464C13.001 1.66797 13.3893 1.66797 14.166 1.66797H15.8327C16.6093 1.66797 16.9977 1.66797 17.3035 1.79464C17.5059 1.8784 17.6897 2.00122 17.8446 2.15607C17.9994 2.31093 18.1223 2.49479 18.206 2.69714C18.3327 3.00297 18.3327 3.3913 18.3327 4.16797C18.3327 4.94464 18.3327 5.33297 18.206 5.6388C18.1223 5.84115 17.9994 6.02501 17.8446 6.17987C17.6897 6.33472 17.5059 6.45754 17.3035 6.5413C16.9977 6.66797 16.6093 6.66797 15.8327 6.66797H14.166C13.3893 6.66797 13.001 6.66797 12.6952 6.5413C12.4928 6.45754 12.309 6.33472 12.1541 6.17987C11.9993 6.02501 11.8764 5.84115 11.7927 5.6388C11.666 5.33297 11.666 4.94464 11.666 4.16797Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_11000_54930">
+                        <rect width="20" height="20" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                        
+                    <h3>Dashboard</h3>
+                </a>
+    
+                <a href="wallets.html" class="active">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.1667 11.6667H14.175M5.83333 5.83333H15.8333C16.2754 5.83333 16.6993 6.00893 17.0118 6.32149C17.3244 6.63405 17.5 7.05797 17.5 7.5V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H15.8333" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+    
+                    <h3>Wallets</h3>
+                </a>
+    
+                <a href="cards.html">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.66602 8.33464H18.3327M3.33268 4.16797H16.666C17.5865 4.16797 18.3327 4.91416 18.3327 5.83464V14.168C18.3327 15.0884 17.5865 15.8346 16.666 15.8346H3.33268C2.41221 15.8346 1.66602 15.0884 1.66602 14.168V5.83464C1.66602 4.91416 2.41221 4.16797 3.33268 4.16797Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                        
+                    <h3>Cards</h3>
+                </a>
+    
+                <a href="transactions.html">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.66732 2.5L3.33398 5.83333M3.33398 5.83333L6.66732 9.16667M3.33398 5.83333H16.6673M13.334 17.5L16.6673 14.1667M16.6673 14.1667L13.334 10.8333M16.6673 14.1667H3.33398" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                        
+                    <h3>Transactions</h3>
+                </a>
+    
+                <!-- <a href="#">  
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3327 17.5V15.8333C13.3327 14.9493 12.9815 14.1014 12.3564 13.4763C11.7313 12.8512 10.8834 12.5 9.99935 12.5H4.99935C4.11529 12.5 3.26745 12.8512 2.64233 13.4763C2.01721 14.1014 1.66602 14.9493 1.66602 15.8333V17.5M18.3327 17.5V15.8333C18.3321 15.0948 18.0863 14.3773 17.6338 13.7936C17.1813 13.2099 16.5478 12.793 15.8327 12.6083M13.3327 2.60833C14.0497 2.79192 14.6852 3.20892 15.139 3.79359C15.5929 4.37827 15.8392 5.09736 15.8392 5.8375C15.8392 6.57764 15.5929 7.29673 15.139 7.88141C14.6852 8.46608 14.0497 8.88308 13.3327 9.06667M10.8327 5.83333C10.8327 7.67428 9.3403 9.16667 7.49935 9.16667C5.6584 9.16667 4.16602 7.67428 4.16602 5.83333C4.16602 3.99238 5.6584 2.5 7.49935 2.5C9.3403 2.5 10.8327 3.99238 10.8327 5.83333Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                                         
+                    <h3>Beneficiaries</h3>
+                </a> -->
+            </div>
+    
+            <div class="left_bottom">
+                <a href="settings.html">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.17522 1H8.82322C8.39887 1 7.99191 1.16857 7.69185 1.46863C7.39179 1.76869 7.22322 2.17565 7.22322 2.6V2.744C7.22293 3.02458 7.14887 3.30015 7.00845 3.54307C6.86804 3.78599 6.66621 3.98771 6.42322 4.128L6.07922 4.328C5.83599 4.46843 5.56008 4.54236 5.27922 4.54236C4.99836 4.54236 4.72245 4.46843 4.47922 4.328L4.35922 4.264C3.99207 4.05221 3.55589 3.99476 3.14642 4.10425C2.73695 4.21374 2.38766 4.48123 2.17522 4.848L1.99922 5.152C1.78743 5.51915 1.72998 5.95533 1.83947 6.3648C1.94896 6.77427 2.21645 7.12356 2.58322 7.336L2.70322 7.416C2.94504 7.55561 3.14612 7.75607 3.28646 7.99746C3.42681 8.23886 3.50154 8.51278 3.50322 8.792V9.2C3.50434 9.48194 3.43094 9.75916 3.29046 10.0036C3.14997 10.2481 2.94739 10.451 2.70322 10.592L2.58322 10.664C2.21645 10.8764 1.94896 11.2257 1.83947 11.6352C1.72998 12.0447 1.78743 12.4809 1.99922 12.848L2.17522 13.152C2.38766 13.5188 2.73695 13.7863 3.14642 13.8958C3.55589 14.0052 3.99207 13.9478 4.35922 13.736L4.47922 13.672C4.72245 13.5316 4.99836 13.4576 5.27922 13.4576C5.56008 13.4576 5.83599 13.5316 6.07922 13.672L6.42322 13.872C6.66621 14.0123 6.86804 14.214 7.00845 14.4569C7.14887 14.6998 7.22293 14.9754 7.22322 15.256V15.4C7.22322 15.8243 7.39179 16.2313 7.69185 16.5314C7.99191 16.8314 8.39887 17 8.82322 17H9.17522C9.59957 17 10.0065 16.8314 10.3066 16.5314C10.6066 16.2313 10.7752 15.8243 10.7752 15.4V15.256C10.7755 14.9754 10.8496 14.6998 10.99 14.4569C11.1304 14.214 11.3322 14.0123 11.5752 13.872L11.9192 13.672C12.1625 13.5316 12.4384 13.4576 12.7192 13.4576C13.0001 13.4576 13.276 13.5316 13.5192 13.672L13.6392 13.736C14.0064 13.9478 14.4426 14.0052 14.852 13.8958C15.2615 13.7863 15.6108 13.5188 15.8232 13.152L15.9992 12.84C16.211 12.4729 16.2685 12.0367 16.159 11.6272C16.0495 11.2177 15.782 10.8684 15.4152 10.656L15.2952 10.592C15.0511 10.451 14.8485 10.2481 14.708 10.0036C14.5675 9.75916 14.4941 9.48194 14.4952 9.2V8.8C14.4941 8.51806 14.5675 8.24084 14.708 7.99639C14.8485 7.75195 15.0511 7.54897 15.2952 7.408L15.4152 7.336C15.782 7.12356 16.0495 6.77427 16.159 6.3648C16.2685 5.95533 16.211 5.51915 15.9992 5.152L15.8232 4.848C15.6108 4.48123 15.2615 4.21374 14.852 4.10425C14.4426 3.99476 14.0064 4.05221 13.6392 4.264L13.5192 4.328C13.276 4.46843 13.0001 4.54236 12.7192 4.54236C12.4384 4.54236 12.1625 4.46843 11.9192 4.328L11.5752 4.128C11.3322 3.98771 11.1304 3.78599 10.99 3.54307C10.8496 3.30015 10.7755 3.02458 10.7752 2.744V2.6C10.7752 2.17565 10.6066 1.76869 10.3066 1.46863C10.0065 1.16857 9.59957 1 9.17522 1Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.99922 11.4C10.3247 11.4 11.3992 10.3255 11.3992 9C11.3992 7.67452 10.3247 6.6 8.99922 6.6C7.67374 6.6 6.59922 7.67452 6.59922 9C6.59922 10.3255 7.67374 11.4 8.99922 11.4Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                        
+                    <h3>Settings</h3>
+                </a>
+    
+                <a href="#">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.5 16.5H3.16667C2.72464 16.5 2.30072 16.3244 1.98816 16.0118C1.67559 15.6993 1.5 15.2754 1.5 14.8333V3.16667C1.5 2.72464 1.67559 2.30072 1.98816 1.98816C2.30072 1.67559 2.72464 1.5 3.16667 1.5H6.5M12.3333 13.1667L16.5 9M16.5 9L12.3333 4.83333M16.5 9H6.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                                               
+                    <h3>Sign out</h3>
+                </a>
+            </div>
+        </div>
+
+        <div class="client_dashboard_right_contain">
+            <div class="client_dashboard_right_main">
+
+                <!-- HEADER -->
+                <header>
+                    <div class="head_content">
+                        <div class="total_balance_main">
+                            <div class="notification_bell_box">
+                                <img id="notificationBell" src="../assets/svg/notification-bell.svg" alt="">
+                                <svg class="notification_dot" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="5" cy="5.24609" r="4.25" fill="#FF5789" stroke="white" stroke-width="1.5"/>
+                                </svg>
+                                    
+                            </div>
+
+                            <!-- PROFILE DROPDOWN -->
+                            <div class="avatar_box" id="avatarBox">
+                                <img src="../assets/images/dashboard-avatar.png" alt="avatar">
+                                <p>John</p>
+                                <svg class="avatar_chervon-do" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 6L8 10L12 6" stroke="#353535" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>  
+                                
+                                <div class="profile_dropdown" id="profileDropDown">
+
+                                    <div class="profile-cont">
+                                        <div class="profi" id="openUserProfileContainer">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9.99967 10.8333C12.3009 10.8333 14.1663 8.96785 14.1663 6.66667C14.1663 4.36548 12.3009 2.5 9.99967 2.5C7.69849 2.5 5.83301 4.36548 5.83301 6.66667C5.83301 8.96785 7.69849 10.8333 9.99967 10.8333ZM9.99967 10.8333C11.7678 10.8333 13.4635 11.5357 14.7137 12.786C15.964 14.0362 16.6663 15.7319 16.6663 17.5M9.99967 10.8333C8.23156 10.8333 6.53587 11.5357 5.28563 12.786C4.03539 14.0362 3.33301 15.7319 3.33301 17.5" stroke="#353535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <h4>Profile</h4>  
+                                        </div>
+        
+                                        <a href="#">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.5 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H7.5M13.3333 14.1667L17.5 10M17.5 10L13.3333 5.83333M17.5 10H7.5" stroke="#353535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            
+                                            <h4>Log out</h4>                      
+                                        </a>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- USER PROFILE CONTAINER -->
+                        <div class="user_profile_container" id="userProfileContainer">
+                            <div class="user_profile_main">
+                                <div class="top_head">
+                                    <div class="box">
+                                        <svg width="34" height="32" viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.9681 9.839V2.24813H30.4902V18.6826C30.4902 21.9365 27.8525 24.5742 24.5986 24.5742H13.0574" stroke="#407BFF" stroke-opacity="0.3" stroke-width="2.9458"/>
+                                            <path d="M17.1035 8.20703H3.3877V30.5331H12.9098V24.4307H17.1035C21.5835 24.4307 25.2153 20.7989 25.2153 16.3188C25.2153 11.8388 21.5835 8.20703 17.1035 8.20703Z" fill="#074DA2"/>
+                                        </svg>
+                                           
+                                        <h4>Profile</h4>
+                                    </div>
+
+                                    <svg id="closeUserProfileContainer" width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M25.3327 7.16406L6.66602 25.8307" stroke="#2A353D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.66602 7.16406L25.3327 25.8307" stroke="#2A353D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg> 
+                                </div>
+
+                                <div class="upload_user_profile_contents">
+                                    <div class="upload_user_img_box" id="uploadPhoto">
+
+                                        <img id="viewPhoto" src="../assets/images/pic.png" alt="user photo">
+                                        <input type="file" id="file-input" accept="image/*" style="display:none;" onchange="previewImage(event)">
+                                    </div>
+
+                                    <div class="text-box">
+                                        <h3>JOHN OKAFOR </h3>
+                                    </div>
+                                </div>
+
+                                <div class="upload_user_profile_details_wrapper">
+                                    <div class="box-content">
+                                        <div class="box">
+                                            <p>Bank Name</p>
+                                            <h4>VTNETWORKS</h4>
+                                        </div>
+
+                                        <div class="box">
+                                            <p>Account Name</p>
+                                            <h4>Paidley-JOHN OKAFOR</h4>
+                                        </div>
+
+                                        <div class="box">
+                                            <p>Account Number</p>
+                                            <h4>1234567890</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="box-content to_show_copy">
+                                        <div class="box2">
+                                            <p>Full Name</p>
+                                            <h4>JOHN OKAFOR</h4>
+                                        </div>
+
+                                        <div class="box2">
+                                            <p>Mobile Number</p>
+                                            <h4>12345678901</h4>
+                                        </div>
+
+                                        <div class="box2">
+                                            <p>Paidley Tag</p>
+
+                                            <div class="tag">
+                                                <h3 id="paidleyTag">@johkafor</h3>
+                                                <svg id="copyPaidleyTag" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 17.4492H17.5" stroke="#353535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M13.75 3.69745C14.0815 3.36593 14.5312 3.17969 15 3.17969C15.2321 3.17969 15.462 3.22541 15.6765 3.31425C15.891 3.40309 16.0858 3.5333 16.25 3.69745C16.4142 3.86161 16.5444 4.05648 16.6332 4.27096C16.722 4.48543 16.7678 4.71531 16.7678 4.94745C16.7678 5.1796 16.722 5.40947 16.6332 5.62395C16.5444 5.83842 16.4142 6.0333 16.25 6.19745L5.83333 16.6141L2.5 17.4475L3.33333 14.1141L13.75 3.69745Z" stroke="#353535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                                  
+                                            </div>
+                                        </div>
+
+                                        <div class="box2">
+                                            <p>Date of Birth</p>
+                                            <h4>**-**-19</h4>
+                                        </div>
+
+                                        <div class="box2">
+                                            <p>Email</p>
+                                            <h4>joh*******19@gmail.com</h4>
+                                        </div>
+
+                                        <div class="box2">
+                                            <p>BVN Number</p>
+                                            <h4>12345678901</h4>
+                                        </div>
+
+                                        <div class="box2">
+                                            <p>NIN Number</p>
+                                            <h4>09876543210</h4>
+                                        </div>
+
+                                        <div class="box2">
+                                            <p>Address</p>
+                                            <h4>No 1a, Igbowo street</h4>
+                                        </div>
+
+                                        <!-- copy text -->
+                                        <div class="copy_text_box" id="textCopied">
+                                            <p>Copied!</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- notification -->
+                    <div class="notifications_container" id="notificationContainer">
+                        <div class="notifications_main">
+                            <div class="notifications_head">
+                                <img src="../assets/images/fav-icon.png" alt="">
+                                <h2>Notifications</h2>
+                            </div>
+
+                            <div class="notifications_content">
+                                <div class="notifications_box"  data-message="message1">
+                                    <p class="p1">02-20-2024</p>
+                                    <h4>It is quick and seamless</h4>
+                                    <p class="p2">Easily send money to loved ones with our mobile transfer...</p>
+                                </div>
+
+                                <div class="notifications_box"  data-message="message2">
+                                    <p class="p1">02-20-2024</p>
+                                    <h4>Secure the gates!</h4>
+                                    <p class="p2">Keep Fraudsters out. Never share your personal banking ....</p>
+                                </div>
+
+                                <div class="notifications_box"  data-message="message3">
+                                    <p class="p1">28-09-2024</p>
+                                    <h4>It is the weekend</h4>
+                                    <p class="p2">Are you shopping till you drop or dance till dawn. Bank eff..</p>
+                                </div>
+
+                                <div class="notifications_box"  data-message="message4">
+                                    <p class="p1">27-09-2024</p>
+                                    <h4>It is TGIF!</h4>
+                                    <p class="p2">Thank God its friday. Chill and merry after a stressful wee...</p>
+                                </div>
+
+                                <div class="notifications_box"  data-message="message5">
+                                    <p class="p1">25-09-2024</p>
+                                    <h4>Urgent 2k? Don’t panic!</h4>
+                                    <p class="p2">With the Piadley referral program, you can easily make  ...</p>
+                                </div>
+
+                                <div class="notifications_box"  data-message="message6">
+                                    <p class="p1">23-09-2024</p>
+                                    <h4>Track your Transaction Activities</h4>
+                                    <p class="p2">You can easily view up to six months of your Transaction ...</p>
+                                </div>
+
+
+                            </div>
+
+                            <!-- message content -->
+                            <!-- overlay -->
+                            <div class="message_overlay" id="messageOverlay"></div>
+
+                            <div class="message_content"  data-message="message1">
+                                <div class="message_man">
+                                   <div class="close_box">
+                                        <svg class="closeMessage" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.5 5L5.5 19" stroke="#2A353D" stroke-width="1.67105" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5.5 5L19.5 19" stroke="#2A353D" stroke-width="1.67105" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                   </div>
+                                       
+                                    <h4>It is quick and seamless</h4>
+                                    <p>Easily send money to loved ones with our transfer feature. Instant, hassle-free transfer awaits you.</p>
+                                </div>
+                            </div>
+
+                            <div class="message_content"  data-message="message2">
+                                <div class="message_man">
+                                   <div class="close_box">
+                                        <svg class="closeMessage" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.5 5L5.5 19" stroke="#2A353D" stroke-width="1.67105" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5.5 5L19.5 19" stroke="#2A353D" stroke-width="1.67105" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                   </div>
+                                       
+                                    <h4>Secure the gates!</h4>
+                                    <p>Easily send money to loved ones with our transfer feature. Instant, hassle-free transfer awaits you.</p>
+                                </div>
+                            </div>
+
+                            <div class="message_content"  data-message="message3">
+                                <div class="message_man">
+                                   <div class="close_box">
+                                        <svg class="closeMessage" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.5 5L5.5 19" stroke="#2A353D" stroke-width="1.67105" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5.5 5L19.5 19" stroke="#2A353D" stroke-width="1.67105" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                   </div>
+                                       
+                                    <h4>It is the weekend</h4>
+                                    <p>Are you shopping till you drop or dance till dawn. Bank eff..</p>
+                                </div>
+                            </div>
+
+                            <div class="message_content"  data-message="message4">
+                                <div class="message_man">
+                                   <div class="close_box">
+                                        <svg class="closeMessage" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.5 5L5.5 19" stroke="#2A353D" stroke-width="1.67105" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5.5 5L19.5 19" stroke="#2A353D" stroke-width="1.67105" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                   </div>
+                                       
+                                    <h4>It is TGIF!</h4>
+                                    <p>Thank God its friday. Chill and merry after a stressful wee...</p>
+                                </div>
+                            </div>
+
+                            <div class="message_content"  data-message="message5">
+                                <div class="message_man">
+                                   <div class="close_box">
+                                        <svg class="closeMessage" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.5 5L5.5 19" stroke="#2A353D" stroke-width="1.67105" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5.5 5L19.5 19" stroke="#2A353D" stroke-width="1.67105" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                   </div>
+                                       
+                                    <h4>Urgent 2k? Don’t panic!</h4>
+                                    <p>With the Piadley referral program, you can easily make...</p>
+                                </div>
+                            </div>
+
+                            <div class="message_content"  data-message="message6">
+                                <div class="message_man">
+                                   <div class="close_box">
+                                        <svg class="closeMessage" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.5 5L5.5 19" stroke="#2A353D" stroke-width="1.67105" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5.5 5L19.5 19" stroke="#2A353D" stroke-width="1.67105" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                   </div>
+                                       
+                                    <h4>Track your Transaction Activities</h4>
+                                    <p>You can easily view up to six months of your Transaction ...</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </header>  
+
+                <!-- mobile top header -->
+                <div class="mobile_nav_container">
+                    <div class="mobile_nav_main">
+                        <div class="mobile_dashboard_fav_box">
+                            <a href="index.html"><img src="../assets/images/fav-icon.png" alt="fav icon"></a>
+                            <h3>Wallets</h3>
+                        </div>
+
+                        <div class="nav_right">
+                            <div class="nav_notification_bell_box">
+                                <img class="bell" id="bellMage" src="../assets/svg/notification-bell.svg" alt="">
+                                <svg class="notification_dot" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="5" cy="5.24609" r="4.25" fill="#FF5789" stroke="white" stroke-width="1.5"/>
+                                </svg>                                    
+                            </div>
+
+                            <!-- MOBILE DROPDOWN -->
+                            <div class="nav_avatar_box" id="navAvatarBox">
+                                <img src="../assets/images/dashboard-avatar.png" alt="avatar">
+                                    
+                                <div class="nav-profile_dropdown" id="navProfileDropDown">
+                                   <div class="nav-profile_content">
+                                        <div class="mobile_profile-cont">
+                                            <div class="profi" id="openUserProfileContainer2">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9.99967 10.8333C12.3009 10.8333 14.1663 8.96785 14.1663 6.66667C14.1663 4.36548 12.3009 2.5 9.99967 2.5C7.69849 2.5 5.83301 4.36548 5.83301 6.66667C5.83301 8.96785 7.69849 10.8333 9.99967 10.8333ZM9.99967 10.8333C11.7678 10.8333 13.4635 11.5357 14.7137 12.786C15.964 14.0362 16.6663 15.7319 16.6663 17.5M9.99967 10.8333C8.23156 10.8333 6.53587 11.5357 5.28563 12.786C4.03539 14.0362 3.33301 15.7319 3.33301 17.5" stroke="#353535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <h4>Profile</h4>  
+                                            </div>
+            
+                                            <a href="#">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.5 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H7.5M13.3333 14.1667L17.5 10M17.5 10L13.3333 5.83333M17.5 10H7.5" stroke="#353535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                
+                                                <h4>Log out</h4>                      
+                                            </a>
+                                        </div>  
+                                   </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- notification -->
+                        <div class="mobile_notifications_container" id="mobileNotificationContainer">
+                            <div class="mobile_notifications_main">
+                                <div class="mobile_notifications_head">
+                                    <div class="not_logo">
+                                        <img src="../assets/images/fav-icon.png" alt="">
+                                        <h2>Notifications</h2>
+                                    </div>
+
+                                    <svg id="closeCont" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.5 5L5.5 19" stroke="#2A353D" stroke-width="1.67105" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M5.5 5L19.5 19" stroke="#2A353D" stroke-width="1.67105" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+
+                                <div class="mobile_notifications_content">
+                                    <div class="mobile_notifications_box"  data-mobile-message="message1">
+                                        <p class="p1">02-20-2024</p>
+                                        <h4>It is quick and seamless</h4>
+                                        <p class="p2">Easily send money to loved ones with our mobile transfer...</p>
+                                    </div>
+
+                                    <div class="mobile_notifications_box"  data-mobile-message="message2">
+                                        <p class="p1">02-20-2024</p>
+                                        <h4>Secure the gates!</h4>
+                                        <p class="p2">Keep Fraudsters out. Never share your personal banking ....</p>
+                                    </div>
+
+                                    <div class="mobile_notifications_box"  data-mobile-message="message3">
+                                        <p class="p1">28-09-2024</p>
+                                        <h4>It is the weekend</h4>
+                                        <p class="p2">Are you shopping till you drop or dance till dawn. Bank eff..</p>
+                                    </div>
+
+                                    <div class="mobile_notifications_box"  data-mobile-message="message4">
+                                        <p class="p1">27-09-2024</p>
+                                        <h4>It is TGIF!</h4>
+                                        <p class="p2">Thank God its friday. Chill and merry after a stressful wee...</p>
+                                    </div>
+
+                                    <div class="mobile_notifications_box"  data-mobile-message="message5">
+                                        <p class="p1">25-09-2024</p>
+                                        <h4>Urgent 2k? Don’t panic!</h4>
+                                        <p class="p2">With the Piadley referral program, you can easily make  ...</p>
+                                    </div>
+
+                                    <div class="mobile_notifications_box" data-mobile-message="message6">
+                                        <p class="p1">23-09-2024</p>
+                                        <h4>Track your Transaction Activities</h4>
+                                        <p class="p2">You can easily view up to six months of your Transaction ...</p>
+                                    </div> 
+
+
+                                </div>
+
+                               
+                                <div class="mobile_message_overlay" id="mobileMessageOverlay"></div>
+
+                                <div class="mobile_message_content"  data-mobile-message="message1">
+                                    <div class="mobile_message_man">
+                                        <div class="mobile_close_box">
+                                            <svg class="mobile_closeMessage" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19.5 5L5.5 19" stroke="#2A353D" stroke-width="1.67105" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M5.5 5L19.5 19" stroke="#2A353D" stroke-width="1.67105" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        
+                                        <h4>It is quick and seamless</h4>
+                                        <p>Easily send money to loved ones with our transfer feature. Instant, hassle-free transfer awaits you.</p>
+                                    </div>
+                                </div>
+
+                                <div class="mobile_message_content"  data-mobile-message="message2">
+                                    <div class="mobile_message_man">
+                                    <div class="mobile_close_box">
+                                            <svg class="mobile_closeMessage" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19.5 5L5.5 19" stroke="#2A353D" stroke-width="1.67105" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M5.5 5L19.5 19" stroke="#2A353D" stroke-width="1.67105" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                    </div>
+                                        
+                                        <h4>Secure the gates!</h4>
+                                        <p>Easily send money to loved ones with our transfer feature. Instant, hassle-free transfer awaits you.</p>
+                                    </div>
+                                </div>
+
+                                <div class="mobile_message_content"  data-mobile-message="message3">
+                                    <div class="mobile_message_man">
+                                    <div class="mobile_close_box">
+                                            <svg class="mobile_closeMessage" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19.5 5L5.5 19" stroke="#2A353D" stroke-width="1.67105" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M5.5 5L19.5 19" stroke="#2A353D" stroke-width="1.67105" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                    </div>
+                                        
+                                        <h4>It is the weekend</h4>
+                                        <p>Are you shopping till you drop or dance till dawn. Bank eff..</p>
+                                    </div>
+                                </div>
+
+                                <div class="mobile_message_content"  data-mobile-message="message4">
+                                    <div class="mobile_message_man">
+                                    <div class="mobile_close_box">
+                                            <svg class="mobile_closeMessage" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19.5 5L5.5 19" stroke="#2A353D" stroke-width="1.67105" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M5.5 5L19.5 19" stroke="#2A353D" stroke-width="1.67105" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                    </div>
+                                        
+                                        <h4>It is TGIF!</h4>
+                                        <p>Thank God its friday. Chill and merry after a stressful wee...</p>
+                                    </div>
+                                </div>
+
+                                <div class="mobile_message_content"  data-mobile-message="message5">
+                                    <div class="mobile_message_man">
+                                    <div class="mobile_close_box">
+                                            <svg class="mobile_closeMessage" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19.5 5L5.5 19" stroke="#2A353D" stroke-width="1.67105" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M5.5 5L19.5 19" stroke="#2A353D" stroke-width="1.67105" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                    </div>
+                                        
+                                        <h4>Urgent 2k? Don’t panic!</h4>
+                                        <p>With the Piadley referral program, you can easily make...</p>
+                                    </div>
+                                </div>
+
+                                <div class="mobile_message_content"  data-mobile-message="message6">
+                                    <div class="mobile_message_man">
+                                    <div class="mobile_close_box">
+                                            <svg class="mobile_closeMessage" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19.5 5L5.5 19" stroke="#2A353D" stroke-width="1.67105" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M5.5 5L19.5 19" stroke="#2A353D" stroke-width="1.67105" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                    </div>
+                                        
+                                        <h4>Track your Transaction Activities</h4>
+                                        <p>You can easily view up to six months of your Transaction ...</p>
+                                    </div>
+                                </div> 
+
+                            </div>
+                        </div>
+
+                        <!-- MOBILE USER PROFILE CONTAINER -->
+                        <div class="user_profile_container2" id="userProfileContainer2">
+                            <div class="user_profile_main2">
+                                <div class="top_head">
+                                    <div class="box">
+                                        <svg width="34" height="32" viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.9681 9.839V2.24813H30.4902V18.6826C30.4902 21.9365 27.8525 24.5742 24.5986 24.5742H13.0574" stroke="#407BFF" stroke-opacity="0.3" stroke-width="2.9458"/>
+                                            <path d="M17.1035 8.20703H3.3877V30.5331H12.9098V24.4307H17.1035C21.5835 24.4307 25.2153 20.7989 25.2153 16.3188C25.2153 11.8388 21.5835 8.20703 17.1035 8.20703Z" fill="#074DA2"/>
+                                        </svg>
+                                           
+                                        <h4>Profile</h4>
+                                    </div>
+
+                                    <svg id="closeUserProfileContainer2" width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M25.3327 7.16406L6.66602 25.8307" stroke="#2A353D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.66602 7.16406L25.3327 25.8307" stroke="#2A353D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg> 
+                                </div>
+
+                                <div class="upload_user_profile_contents">
+                                    <div class="upload_user_img_box" id="uploadPhoto2">
+                                        <img id="viewPhoto2" src="../assets/images/pic.png" alt="user photo">
+                                        <input type="file" id="file-input2" accept="image/*" style="display:none;" onchange="previewImage2(event)">
+                                    </div>
+
+                                    <div class="text-box">
+                                        <h3>JOHN OKAFOR </h3>
+                                    </div>
+                                </div>
+
+                                <div class="upload_user_profile_details_wrapper">
+                                    <div class="box-content">
+                                        <div class="box">
+                                            <p>Bank Name</p>
+                                            <h4>VTNETWORKS</h4>
+                                        </div>
+
+                                        <div class="box">
+                                            <p>Account Name</p>
+                                            <h4>Paidley-JOHN OKAFOR</h4>
+                                        </div>
+
+                                        <div class="box">
+                                            <p>Account Number</p>
+                                            <h4>1234567890</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="box-content to_show_copy">
+                                        <div class="box2">
+                                            <p>Full Name</p>
+                                            <h4>JOHN OKAFOR</h4>
+                                        </div>
+
+                                        <div class="box2">
+                                            <p>Mobile Number</p>
+                                            <h4>12345678901</h4>
+                                        </div>
+
+                                        <div class="box2">
+                                            <p>Paidley Tag</p>
+
+                                            <div class="tag">
+                                                <h3 id="paidleyTag2">@johkafor</h3>
+                                                <svg id="copyPaidleyTag2" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 17.4492H17.5" stroke="#353535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M13.75 3.69745C14.0815 3.36593 14.5312 3.17969 15 3.17969C15.2321 3.17969 15.462 3.22541 15.6765 3.31425C15.891 3.40309 16.0858 3.5333 16.25 3.69745C16.4142 3.86161 16.5444 4.05648 16.6332 4.27096C16.722 4.48543 16.7678 4.71531 16.7678 4.94745C16.7678 5.1796 16.722 5.40947 16.6332 5.62395C16.5444 5.83842 16.4142 6.0333 16.25 6.19745L5.83333 16.6141L2.5 17.4475L3.33333 14.1141L13.75 3.69745Z" stroke="#353535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                                  
+                                            </div>
+                                        </div>
+
+                                        <div class="box2">
+                                            <p>Date of Birth</p>
+                                            <h4>**-**-19</h4>
+                                        </div>
+
+                                        <div class="box2">
+                                            <p>Email</p>
+                                            <h4>joh*******19@gmail.com</h4>
+                                        </div>
+
+                                        <div class="box2">
+                                            <p>BVN Number</p>
+                                            <h4>12345678901</h4>
+                                        </div>
+
+                                        <div class="box2">
+                                            <p>NIN Number</p>
+                                            <h4>09876543210</h4>
+                                        </div>
+
+                                        <div class="box2">
+                                            <p>Address</p>
+                                            <h4>No 1a, Igbowo street</h4>
+                                        </div>
+
+                                        <!-- copy text -->
+                                        <div class="copy_text_box" id="textCopied2">
+                                            <p>Copied!</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <!-- USD WALLET CONTAINER -->
+                <div class="usd_wallet_container">
+                    <div class="wallets_tex">
+                        <h2>Wallets</h2>
+                    </div>
+
+                    <div class="usd-card">
+                        <div class="money_logo">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_12008_84976)">
+                                <rect width="21" height="21" rx="10.5" fill="#074DA2"/>
+                                <path d="M12.512 10.872H14.704V11.928L11.936 11.96L11.504 12.792V13.416H14.704V14.488H11.504V17H10.048V14.488H6.848V13.416H10.048V12.792L9.6 11.96L6.848 11.928V10.872H9.04L6.4 5.848H8.032L10.768 11.48L13.504 5.848H15.136L12.512 10.872Z" fill="#F9FAFD"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_12008_84976">
+                                <rect width="21" height="21" rx="10.5" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                                                                            
+                            <h4>CNY Wallet</h4>  
+                        </div>
+
+                        <div class="available_balance_box">
+                            <p>Available Balance</p>
+                            <svg class="show_wallet" id="showWallet" width="16" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_10999_139929)">
+                                <path d="M1.16602 8.0013C1.16602 8.0013 3.83268 2.66797 8.49935 2.66797C13.166 2.66797 15.8327 8.0013 15.8327 8.0013C15.8327 8.0013 13.166 13.3346 8.49935 13.3346C3.83268 13.3346 1.16602 8.0013 1.16602 8.0013Z" fill="#074DA2" stroke="#074DA2" stroke-width="1.77031" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.5 10C9.60457 10 10.5 9.10457 10.5 8C10.5 6.89543 9.60457 6 8.5 6C7.39543 6 6.5 6.89543 6.5 8C6.5 9.10457 7.39543 10 8.5 10Z" stroke="#F9FAFD" stroke-width="1.77031" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_10999_139929">
+                                <rect width="16" height="16" fill="white" transform="translate(0.5)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>  
+                            
+                            <svg class="hide_wallet" id="hideWallet" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.55332 9.257L2.74732 14.0617C2.68582 14.1253 2.61226 14.1761 2.53092 14.2111C2.44958 14.246 2.3621 14.2644 2.27359 14.2652C2.18507 14.2659 2.09728 14.2491 2.01535 14.2155C1.93342 14.182 1.85898 14.1325 1.79639 14.0699C1.73379 14.0073 1.68429 13.9329 1.65077 13.851C1.61725 13.769 1.60038 13.6812 1.60115 13.5927C1.60192 13.5042 1.62031 13.4167 1.65525 13.3354C1.69019 13.2541 1.74098 13.1805 1.80465 13.119L6.68732 8.23633C6.64931 8.02466 6.66306 7.80693 6.72741 7.60173C6.79176 7.39652 6.90478 7.20993 7.05685 7.05786C7.20892 6.90579 7.39551 6.79277 7.60072 6.72842C7.80592 6.66407 8.02365 6.65032 8.23532 6.68833L13.12 1.80433C13.2457 1.68289 13.4141 1.61569 13.5889 1.61721C13.7637 1.61873 13.9309 1.68884 14.0545 1.81245C14.1781 1.93606 14.2482 2.10326 14.2498 2.27806C14.2513 2.45286 14.1841 2.62126 14.0627 2.747L9.25732 7.55366C9.34218 7.79138 9.35783 8.04829 9.30243 8.29455C9.24704 8.5408 9.12289 8.76628 8.94441 8.94476C8.76593 9.12324 8.54046 9.24739 8.2942 9.30278C8.04795 9.35817 7.79103 9.34186 7.55332 9.257ZM12.58 5.17233C13.834 5.895 14.6673 6.89366 14.6673 8.00033C14.6673 10.2097 11.362 11.9957 8.00065 12.0003C7.31662 12.0004 6.63446 11.9289 5.96532 11.787L7.20598 10.547C7.67051 10.6922 8.16591 10.7074 8.6385 10.5911C9.11109 10.4749 9.54285 10.2315 9.88698 9.88733C10.2311 9.54319 10.4745 9.11143 10.5908 8.63885C10.7071 8.16626 10.6918 7.67086 10.5467 7.20633L12.58 5.17233ZM9.80665 4.175L8.58398 5.39766C8.14532 5.29919 7.68888 5.31322 7.25709 5.43845C6.8253 5.56369 6.43218 5.79605 6.11428 6.11396C5.79638 6.43186 5.56401 6.82498 5.43878 7.25677C5.31354 7.68855 5.29951 8.145 5.39798 8.58366L3.24665 10.7337C2.08998 10.019 1.33398 9.05699 1.33398 8.00033C1.33398 5.791 4.65665 3.989 8.00065 4.00033C8.60998 4.00233 9.21865 4.063 9.80665 4.175Z" fill="#074DA2"/>
+                            </svg>
+                                                                                                                                 
+                        </div>
+
+                        <div class="amount_box">
+                            <h3>¥</h3>
+                            <p id="amount2">8,000.00</p>
+                        </div>
+
+                        <p class="p2">Last updated a few seconds ago</p>
+
+                        <div class="dollar_button_box">
+                            <button class="convert-btn" id="openUsdAddMoneyContainer">
+                                <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.668 11.377L19.3301 20.0391" stroke="#074DA2" stroke-width="1.77031" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10.669 20.0362H19.331V11.3741" stroke="#074DA2" stroke-width="1.77031" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                    
+                                <h4>Add Money</h4>
+                            </button>
+                            
+                            <button class="send-btn" id="sendBtn">
+                                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.169 20.0292L19.8311 11.3672" stroke="#F9FAFD" stroke-width="1.77031" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.169 11.3701H19.831V20.0321" stroke="#F9FAFD" stroke-width="1.77031" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                                                       
+                                <h4>Send Money</h4>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="usd_recent_trans">
+                        <h3>Recent Transactions</h3>
+                        <p id="seeAll">See All</p>
+                    </div>
+
+                    <div class="tab-ble_cont">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>type</th>
+                                    <th>Amount</th>
+                                    <th>Date</th>
+                                    <th>Time</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+    
+                            <tbody>
+                                <tr>
+                                    <td class="you">
+                                        <p>You <span>(CNY Wallet)</span></p>
+                                    </td>
+                                    <td class="conversion">
+                                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.666992" y="0.703125" width="20" height="20" rx="10" fill="#074DA2"/>
+                                            <path d="M13.9891 15.7057C15.1606 14.9299 16.0226 13.7677 16.425 12.4215C16.8274 11.0754 16.7446 9.63067 16.1911 8.33929C15.6375 7.04791 14.6484 5.99174 13.396 5.35489C12.1436 4.71804 10.7074 4.5409 9.33779 4.85435M13.9891 15.7057V13.3723M13.9891 15.7057H16.3378M7.33779 5.71635C6.17039 6.49495 5.31282 7.65809 4.91419 9.00351C4.51556 10.3489 4.6011 11.7915 5.15594 13.0804C5.71077 14.3692 6.69979 15.4229 7.95102 16.0581C9.20226 16.6933 10.6365 16.8698 12.0045 16.557M7.33779 5.71635V8.03902M7.33779 5.71635H5.00446" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                            
+                                        <p>Conversion</p>
+                                    </td>
+                                    <td class="primary">¥150</td>
+                                    <td class="today">Today</td>
+                                    <td class="time">5:09 PM</td>
+                                    <td class="success">Successful</td>
+                                </tr>
+    
+                                <tr>
+                                    <td class="name">John Okafor</td>
+                                    <td class="incoming">
+                                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.6673 2.37239C15.2507 2.37239 19.0007 6.1224 19.0007 10.7057C19.0007 15.2891 15.2507 19.0391 10.6673 19.0391C6.08398 19.0391 2.33398 15.2891 2.33398 10.7057C2.33398 6.1224 6.08398 2.37239 10.6673 2.37239Z" fill="#2EAF4A" stroke="#2EAF4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.334 14.0391L7.11176 7.81684" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8.76954 14.0391L13.334 14.0391L13.334 9.47462" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                            
+                                        <span>Incoming</span>
+                                    </td>
+                                    <td class="green_amount">+¥2,700.00</td>
+                                    <td class="today">Today</td>
+                                    <td class="time">9:20 AM</td>
+                                    <td class="success">Successful</td>
+                                </tr>
+    
+                                <tr>
+                                    <td class="name">Victor Emmanuel</td>
+                                    <td class="debit">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.6673 18.3346C15.2507 18.3346 19.0007 14.5846 19.0007 10.0013C19.0007 5.41797 15.2507 1.66797 10.6673 1.66797C6.08398 1.66797 2.33398 5.41797 2.33398 10.0013C2.33398 14.5846 6.08398 18.3346 10.6673 18.3346Z" fill="#C91301" stroke="#C91301" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.334 6.66797L7.11176 12.8902" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8.76954 6.66797L13.334 6.66797L13.334 11.2324" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                            
+                                        <span>Outgoing</span>
+                                    </td>
+                                    <td class="red_amount">-¥500.00</td>
+                                    <td class="today">10 oct 2024</td>
+                                    <td class="time">11:15 AM</td>
+                                    <td class="pending">Pending</td>
+                                </tr>
+    
+                                <tr>
+                                    <td class="name">Taye Oluomo</td>
+                                    <td class="incoming">
+                                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.6673 2.37239C15.2507 2.37239 19.0007 6.1224 19.0007 10.7057C19.0007 15.2891 15.2507 19.0391 10.6673 19.0391C6.08398 19.0391 2.33398 15.2891 2.33398 10.7057C2.33398 6.1224 6.08398 2.37239 10.6673 2.37239Z" fill="#2EAF4A" stroke="#2EAF4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.334 14.0391L7.11176 7.81684" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8.76954 14.0391L13.334 14.0391L13.334 9.47462" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                            
+                                        <span>Incoming</span>
+                                    </td>
+                                    <td class="green_amount">+¥2,700.00</td>
+                                    <td class="today">9 oct 2024</td>
+                                    <td class="time">2:30 PM</td>
+                                    <td class="failed">Failed</td>
+                                </tr>
+    
+                                <tr class="other_transactions">
+                                    <td class="you">
+                                        <p>You <span>(CNY Wallet)</span></p>
+                                    </td>
+                                    <td class="conversion">
+                                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.666992" y="0.703125" width="20" height="20" rx="10" fill="#074DA2"/>
+                                            <path d="M13.9891 15.7057C15.1606 14.9299 16.0226 13.7677 16.425 12.4215C16.8274 11.0754 16.7446 9.63067 16.1911 8.33929C15.6375 7.04791 14.6484 5.99174 13.396 5.35489C12.1436 4.71804 10.7074 4.5409 9.33779 4.85435M13.9891 15.7057V13.3723M13.9891 15.7057H16.3378M7.33779 5.71635C6.17039 6.49495 5.31282 7.65809 4.91419 9.00351C4.51556 10.3489 4.6011 11.7915 5.15594 13.0804C5.71077 14.3692 6.69979 15.4229 7.95102 16.0581C9.20226 16.6933 10.6365 16.8698 12.0045 16.557M7.33779 5.71635V8.03902M7.33779 5.71635H5.00446" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                            
+                                        <p>Conversion</p>
+                                    </td>
+                                    <td class="primary">¥300</td>
+                                    <td class="today">7 oct 2024</td>
+                                    <td class="time">8:09 PM</td>
+                                    <td class="success">Successful</td>
+                                </tr>
+    
+                                <tr class="other_transactions">
+                                    <td class="name">John Okafor</td>
+                                    <td class="incoming">
+                                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.6673 2.37239C15.2507 2.37239 19.0007 6.1224 19.0007 10.7057C19.0007 15.2891 15.2507 19.0391 10.6673 19.0391C6.08398 19.0391 2.33398 15.2891 2.33398 10.7057C2.33398 6.1224 6.08398 2.37239 10.6673 2.37239Z" fill="#2EAF4A" stroke="#2EAF4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.334 14.0391L7.11176 7.81684" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8.76954 14.0391L13.334 14.0391L13.334 9.47462" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                            
+                                        <span>Incoming</span>
+                                    </td>
+                                    <td class="green_amount">+¥1,700.00</td>
+                                    <td class="today">5 oct 2024</td>
+                                    <td class="time">7:20 AM</td>
+                                    <td class="success">Successful</td>
+                                </tr>
+    
+                                <tr class="other_transactions">
+                                    <td class="name">Victor Emmanuel</td>
+                                    <td class="debit">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.6673 18.3346C15.2507 18.3346 19.0007 14.5846 19.0007 10.0013C19.0007 5.41797 15.2507 1.66797 10.6673 1.66797C6.08398 1.66797 2.33398 5.41797 2.33398 10.0013C2.33398 14.5846 6.08398 18.3346 10.6673 18.3346Z" fill="#C91301" stroke="#C91301" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.334 6.66797L7.11176 12.8902" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8.76954 6.66797L13.334 6.66797L13.334 11.2324" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                            
+                                        <span>Outgoing</span>
+                                    </td>
+                                    <td class="red_amount">-¥300.00</td>
+                                    <td class="today">2 oct 2024</td>
+                                    <td class="time">9:10 AM</td>
+                                    <td class="pending">Pending</td>
+                                </tr>
+    
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>type</th>
+                                <th>Amount</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="you">
+                                    <p>You <span>(CNY Wallet)</span></p>
+                                </td>
+                                <td class="conversion">
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.666992" y="0.703125" width="20" height="20" rx="10" fill="#074DA2"/>
+                                        <path d="M13.9891 15.7057C15.1606 14.9299 16.0226 13.7677 16.425 12.4215C16.8274 11.0754 16.7446 9.63067 16.1911 8.33929C15.6375 7.04791 14.6484 5.99174 13.396 5.35489C12.1436 4.71804 10.7074 4.5409 9.33779 4.85435M13.9891 15.7057V13.3723M13.9891 15.7057H16.3378M7.33779 5.71635C6.17039 6.49495 5.31282 7.65809 4.91419 9.00351C4.51556 10.3489 4.6011 11.7915 5.15594 13.0804C5.71077 14.3692 6.69979 15.4229 7.95102 16.0581C9.20226 16.6933 10.6365 16.8698 12.0045 16.557M7.33779 5.71635V8.03902M7.33779 5.71635H5.00446" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                        
+                                    <p>Conversion</p>
+                                </td>
+                                <td class="primary">¥150</td>
+                                <td class="today">Today</td>
+                                <td class="time">5:09 PM</td>
+                                <td class="success">Successful</td>
+                            </tr>
+
+                            <tr>
+                                <td class="name">John Okafor</td>
+                                <td class="incoming">
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.6673 2.37239C15.2507 2.37239 19.0007 6.1224 19.0007 10.7057C19.0007 15.2891 15.2507 19.0391 10.6673 19.0391C6.08398 19.0391 2.33398 15.2891 2.33398 10.7057C2.33398 6.1224 6.08398 2.37239 10.6673 2.37239Z" fill="#2EAF4A" stroke="#2EAF4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M13.334 14.0391L7.11176 7.81684" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8.76954 14.0391L13.334 14.0391L13.334 9.47462" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                        
+                                        
+                                    <span>Incoming</span>
+                                </td>
+                                <td class="green_amount">+¥2,700.00</td>
+                                <td class="today">Today</td>
+                                <td class="time">9:20 AM</td>
+                                <td class="success">Successful</td>
+                            </tr>
+
+                            <tr>
+                                <td class="name">Victor Emmanuel</td>
+                                <td class="debit">
+                                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.6673 18.3346C15.2507 18.3346 19.0007 14.5846 19.0007 10.0013C19.0007 5.41797 15.2507 1.66797 10.6673 1.66797C6.08398 1.66797 2.33398 5.41797 2.33398 10.0013C2.33398 14.5846 6.08398 18.3346 10.6673 18.3346Z" fill="#C91301" stroke="#C91301" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M13.334 6.66797L7.11176 12.8902" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8.76954 6.66797L13.334 6.66797L13.334 11.2324" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                        
+                                    <span>Outgoing</span>
+                                </td>
+                                <td class="red_amount">-¥500.00</td>
+                                <td class="today">10 oct 2024</td>
+                                <td class="time">11:15 AM</td>
+                                <td class="pending">Pending</td>
+                            </tr>
+
+                            <tr>
+                                <td class="name">Taye Oluomo</td>
+                                <td class="incoming">
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.6673 2.37239C15.2507 2.37239 19.0007 6.1224 19.0007 10.7057C19.0007 15.2891 15.2507 19.0391 10.6673 19.0391C6.08398 19.0391 2.33398 15.2891 2.33398 10.7057C2.33398 6.1224 6.08398 2.37239 10.6673 2.37239Z" fill="#2EAF4A" stroke="#2EAF4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M13.334 14.0391L7.11176 7.81684" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8.76954 14.0391L13.334 14.0391L13.334 9.47462" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                        
+                                        
+                                    <span>Incoming</span>
+                                </td>
+                                <td class="green_amount">+¥2,700.00</td>
+                                <td class="today">9 oct 2024</td>
+                                <td class="time">2:30 PM</td>
+                                <td class="failed">Failed</td>
+                            </tr>
+
+                            <tr class="other_transactions">
+                                <td class="you">
+                                    <p>You <span>(CNY Wallet)</span></p>
+                                </td>
+                                <td class="conversion">
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.666992" y="0.703125" width="20" height="20" rx="10" fill="#074DA2"/>
+                                        <path d="M13.9891 15.7057C15.1606 14.9299 16.0226 13.7677 16.425 12.4215C16.8274 11.0754 16.7446 9.63067 16.1911 8.33929C15.6375 7.04791 14.6484 5.99174 13.396 5.35489C12.1436 4.71804 10.7074 4.5409 9.33779 4.85435M13.9891 15.7057V13.3723M13.9891 15.7057H16.3378M7.33779 5.71635C6.17039 6.49495 5.31282 7.65809 4.91419 9.00351C4.51556 10.3489 4.6011 11.7915 5.15594 13.0804C5.71077 14.3692 6.69979 15.4229 7.95102 16.0581C9.20226 16.6933 10.6365 16.8698 12.0045 16.557M7.33779 5.71635V8.03902M7.33779 5.71635H5.00446" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                        
+                                    <p>Conversion</p>
+                                </td>
+                                <td class="primary">¥300</td>
+                                <td class="today">7 oct 2024</td>
+                                <td class="time">8:09 PM</td>
+                                <td class="success">Successful</td>
+                            </tr>
+
+                            <tr class="other_transactions">
+                                <td class="name">John Okafor</td>
+                                <td class="incoming">
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.6673 2.37239C15.2507 2.37239 19.0007 6.1224 19.0007 10.7057C19.0007 15.2891 15.2507 19.0391 10.6673 19.0391C6.08398 19.0391 2.33398 15.2891 2.33398 10.7057C2.33398 6.1224 6.08398 2.37239 10.6673 2.37239Z" fill="#2EAF4A" stroke="#2EAF4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M13.334 14.0391L7.11176 7.81684" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8.76954 14.0391L13.334 14.0391L13.334 9.47462" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                        
+                                        
+                                    <span>Incoming</span>
+                                </td>
+                                <td class="green_amount">+¥1,700.00</td>
+                                <td class="today">5 oct 2024</td>
+                                <td class="time">7:20 AM</td>
+                                <td class="success">Successful</td>
+                            </tr>
+
+                            <tr class="other_transactions">
+                                <td class="name">Victor Emmanuel</td>
+                                <td class="debit">
+                                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.6673 18.3346C15.2507 18.3346 19.0007 14.5846 19.0007 10.0013C19.0007 5.41797 15.2507 1.66797 10.6673 1.66797C6.08398 1.66797 2.33398 5.41797 2.33398 10.0013C2.33398 14.5846 6.08398 18.3346 10.6673 18.3346Z" fill="#C91301" stroke="#C91301" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M13.334 6.66797L7.11176 12.8902" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8.76954 6.66797L13.334 6.66797L13.334 11.2324" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                        
+                                    <span>Outgoing</span>
+                                </td>
+                                <td class="red_amount">-¥300.00</td>
+                                <td class="today">2 oct 2024</td>
+                                <td class="time">9:10 AM</td>
+                                <td class="pending">Pending</td>
+                            </tr>
+
+                        </tbody>
+                    </table> -->
+
+                    <!-- MOBILE USD REECENT TRANSACTION -->
+                    <div class="mobile_usd_recent_transaction_container">
+                        <div class="mobile_usd_recent_transaction_main">
+                            <div class="mobile_usd_recent_trans">
+                                <h3>Recent Transactions</h3>
+                                <p id="mobileSeeAll">See All</p>
+                            </div>
+
+                            <div class="usd_transaction_box">
+                                <div class="box1">
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.666992" y="0.703125" width="20" height="20" rx="10" fill="#074DA2"/>
+                                        <path d="M13.9891 15.7057C15.1606 14.9299 16.0226 13.7677 16.425 12.4215C16.8274 11.0754 16.7446 9.63067 16.1911 8.33929C15.6375 7.04791 14.6484 5.99174 13.396 5.35489C12.1436 4.71804 10.7074 4.5409 9.33779 4.85435M13.9891 15.7057V13.3723M13.9891 15.7057H16.3378M7.33779 5.71635C6.17039 6.49495 5.31282 7.65809 4.91419 9.00351C4.51556 10.3489 4.6011 11.7915 5.15594 13.0804C5.71077 14.3692 6.69979 15.4229 7.95102 16.0581C9.20226 16.6933 10.6365 16.8698 12.0045 16.557M7.33779 5.71635V8.03902M7.33779 5.71635H5.00446" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+    
+                                    <div class="peter">
+                                        <p class="p1">You <span>(CNY Wallet)</span></p>
+                                        <h4>Paidley</h4>
+                                        <p class="p2">1234567890</p>
+                                    </div>
+                                </div>
+    
+                                <div class="box2">
+                                    <h3>¥150</h3>
+                                    <p>5:09 AM</p>
+                                </div>
+                            </div>
+
+                            <div class="usd_transaction_box">
+                                <div class="box1">
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.6673 2.37239C15.2507 2.37239 19.0007 6.1224 19.0007 10.7057C19.0007 15.2891 15.2507 19.0391 10.6673 19.0391C6.08398 19.0391 2.33398 15.2891 2.33398 10.7057C2.33398 6.1224 6.08398 2.37239 10.6673 2.37239Z" fill="#2EAF4A" stroke="#2EAF4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M13.334 14.0391L7.11176 7.81684" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8.76954 14.0391L13.334 14.0391L13.334 9.47462" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg> 
+    
+                                    <div class="peter">
+                                        <p class="will">Williams Kate</p>
+                                        <h4>Paidley</h4>
+                                        <p class="p2">8045798757</p>
+                                    </div>
+                                </div>
+    
+                                <div class="box2">
+                                    <h3 class="success">+¥2,700.00</h3>
+                                    <p>9:20 AM</p>
+                                </div>
+                            </div>
+
+                            <div class="usd_transaction_box mobile_other_transactions">
+                                <div class="box1">
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.666992" y="0.703125" width="20" height="20" rx="10" fill="#074DA2"/>
+                                        <path d="M13.9891 15.7057C15.1606 14.9299 16.0226 13.7677 16.425 12.4215C16.8274 11.0754 16.7446 9.63067 16.1911 8.33929C15.6375 7.04791 14.6484 5.99174 13.396 5.35489C12.1436 4.71804 10.7074 4.5409 9.33779 4.85435M13.9891 15.7057V13.3723M13.9891 15.7057H16.3378M7.33779 5.71635C6.17039 6.49495 5.31282 7.65809 4.91419 9.00351C4.51556 10.3489 4.6011 11.7915 5.15594 13.0804C5.71077 14.3692 6.69979 15.4229 7.95102 16.0581C9.20226 16.6933 10.6365 16.8698 12.0045 16.557M7.33779 5.71635V8.03902M7.33779 5.71635H5.00446" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+    
+                                    <div class="peter">
+                                        <p class="p1">You <span>(CNY Wallet)</span></p>
+                                        <h4>Paidley</h4>
+                                        <p class="p2">1234567890</p>
+                                    </div>
+                                </div>
+    
+                                <div class="box2">
+                                    <h3>¥150</h3>
+                                    <p>5:09 AM</p>
+                                </div>
+                            </div>
+
+                            <div class="usd_transaction_box mobile_other_transactions">
+                                <div class="box1">
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.6673 2.37239C15.2507 2.37239 19.0007 6.1224 19.0007 10.7057C19.0007 15.2891 15.2507 19.0391 10.6673 19.0391C6.08398 19.0391 2.33398 15.2891 2.33398 10.7057C2.33398 6.1224 6.08398 2.37239 10.6673 2.37239Z" fill="#2EAF4A" stroke="#2EAF4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M13.334 14.0391L7.11176 7.81684" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8.76954 14.0391L13.334 14.0391L13.334 9.47462" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg> 
+    
+                                    <div class="peter">
+                                        <p class="will">Williams Kate</p>
+                                        <h4>Paidley</h4>
+                                        <p class="p2">8045798757</p>
+                                    </div>
+                                </div>
+    
+                                <div class="box2">
+                                    <h3 class="success">+¥2,700.00</h3>
+                                    <p>9:20 AM</p>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEND MONEY OVERLAY -->
+                <div class="send_money_overlay" id="sendMoneyOverlay"></div>
+
+                <!-- SEND MONEY MODAL-->
+                <div class="send_money_container" id="sendMoneyContainer">
+                    <div class="send_money_main">
+                        <div class="send_money_head">
+                            <div class="dash_add_text">
+                                <h3>Send Money</h3>
+                                <p>Select Transfer Method</p>
+                            </div>
+
+                            <svg id="closeSendMoney" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M25.3337 6.66797L6.66699 25.3346" stroke="#2A353D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6.66699 6.66797L25.3337 25.3346" stroke="#2A353D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                   
+                        </div>
+
+                        <div class="send_money_content">
+                            <a href="send-to-bank.html" class="dash_box">
+                                <div class="svg_box">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 9.06907C2 7.87289 2.48238 7.13982 3.48063 6.58428L7.58987 4.29744C9.7431 3.09915 10.8197 2.5 12 2.5C13.1803 2.5 14.2569 3.09915 16.4101 4.29744L20.5194 6.58428C21.5176 7.13982 22 7.8729 22 9.06907C22 9.39343 22 9.55561 21.9646 9.68894C21.7785 10.3894 21.1437 10.5 20.5307 10.5H3.46928C2.85627 10.5 2.22152 10.3894 2.03542 9.68894C2 9.55561 2 9.39343 2 9.06907Z" stroke="#808080" stroke-width="2"/>
+                                        <path d="M11.9959 7.5H12.0049" stroke="#808080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4 10.5V19M8 10.5V19" stroke="#808080" stroke-width="2"/>
+                                        <path d="M16 10.5V19M20 10.5V19" stroke="#808080" stroke-width="2"/>
+                                        <path d="M19 19H5C3.34315 19 2 20.3431 2 22C2 22.2761 2.22386 22.5 2.5 22.5H21.5C21.7761 22.5 22 22.2761 22 22C22 20.3431 20.6569 19 19 19Z" stroke="#808080" stroke-width="2"/>
+                                    </svg>
+                                </div>                                       
+
+                                <div class="trans">
+                                    <h4>Send to Bank Account</h4>
+                                    <p>Send money using bank details</p>
+                                </div>
+                                    
+                            </a>
+
+                            <a href="send-to-cny-wallet.html" class="dash_box">
+                                <div class="svg_box">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_10999_140403)">
+                                        <path d="M2 10.5H22M4 5.5H20C21.1046 5.5 22 6.39543 22 7.5V17.5C22 18.6046 21.1046 19.5 20 19.5H4C2.89543 19.5 2 18.6046 2 17.5V7.5C2 6.39543 2.89543 5.5 4 5.5Z" stroke="#808080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_10999_140403">
+                                        <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>                                      
+                                    
+                                <div class="trans">
+                                    <h4>Send to Wallet</h4>
+                                    <p>Send money using wallet details</p>
+                                </div>
+                                    
+                            </a>
+
+                        </div>
+                    </div>
+                </div> 
+
+                <!-- USD ADD MONEY MODAL -->
+                <div class="dash_add_money_container" id="usdAddMoneyContainer">
+                    <div class="dash_add_money_main">
+                        <div class="dash_add_head">
+                            <div class="dash_add_text">
+                                <h3>Add Money</h3>
+                                <p>Select Transfer Method</p>
+                            </div>
+
+                            <svg id="closeUsdAddMoneyContainer" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M25.3337 6.66797L6.66699 25.3346" stroke="#2A353D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6.66699 6.66797L25.3337 25.3346" stroke="#2A353D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                   
+                        </div>
+
+                        <div class="dash_add_money_content">
+                            <div class="dash_box" id="openUsdBankContainer">
+                                <div class="svg_box">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 9.06907C2 7.87289 2.48238 7.13982 3.48063 6.58428L7.58987 4.29744C9.7431 3.09915 10.8197 2.5 12 2.5C13.1803 2.5 14.2569 3.09915 16.4101 4.29744L20.5194 6.58428C21.5176 7.13982 22 7.8729 22 9.06907C22 9.39343 22 9.55561 21.9646 9.68894C21.7785 10.3894 21.1437 10.5 20.5307 10.5H3.46928C2.85627 10.5 2.22152 10.3894 2.03542 9.68894C2 9.55561 2 9.39343 2 9.06907Z" stroke="#808080" stroke-width="2"/>
+                                        <path d="M11.9959 7.5H12.0049" stroke="#808080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4 10.5V19M8 10.5V19" stroke="#808080" stroke-width="2"/>
+                                        <path d="M16 10.5V19M20 10.5V19" stroke="#808080" stroke-width="2"/>
+                                        <path d="M19 19H5C3.34315 19 2 20.3431 2 22C2 22.2761 2.22386 22.5 2.5 22.5H21.5C21.7761 22.5 22 22.2761 22 22C22 20.3431 20.6569 19 19 19Z" stroke="#808080" stroke-width="2"/>
+                                    </svg>
+                                </div>                                       
+
+                                <div class="trans">
+                                    <h4>Bank Transfer</h4>
+                                    <p>Add money via mobile or internet banking</p>
+                                </div>
+                                    
+                            </div>
+
+                            <a class="dash_box dash_box_a" href="convert-currency.html">
+                                <div class="svg_box">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.99961 2.89844C5.36309 2.89844 4.75264 3.15129 4.30255 3.60138C3.85247 4.05147 3.59961 4.66192 3.59961 5.29844V7.69844C3.59961 8.33496 3.85247 8.94541 4.30255 9.39549C4.75264 9.84558 5.36309 10.0984 5.99961 10.0984H15.5996C16.2361 10.0984 16.8466 9.84558 17.2967 9.39549C17.7468 8.94541 17.9996 8.33496 17.9996 7.69844V5.29844C17.9996 4.66192 17.7468 4.05147 17.2967 3.60138C16.8466 3.15129 16.2361 2.89844 15.5996 2.89844H5.99961ZM4.79961 5.29844C4.79961 4.98018 4.92604 4.67495 5.15108 4.44991C5.37613 4.22487 5.68135 4.09844 5.99961 4.09844H15.5996C15.9179 4.09844 16.2231 4.22487 16.4481 4.44991C16.6732 4.67495 16.7996 4.98018 16.7996 5.29844V7.69844C16.7996 8.0167 16.6732 8.32192 16.4481 8.54697C16.2231 8.77201 15.9179 8.89844 15.5996 8.89844H5.99961C5.68135 8.89844 5.37613 8.77201 5.15108 8.54697C4.92604 8.32192 4.79961 8.0167 4.79961 7.69844V5.29844ZM8.39961 16.6984C8.24048 16.6984 8.08787 16.7617 7.97535 16.8742C7.86282 16.9867 7.79961 17.1393 7.79961 17.2984C7.79961 17.4576 7.86282 17.6102 7.97535 17.7227C8.08787 17.8352 8.24048 17.8984 8.39961 17.8984H13.1996C13.3587 17.8984 13.5114 17.8352 13.6239 17.7227C13.7364 17.6102 13.7996 17.4576 13.7996 17.2984C13.7996 17.1393 13.7364 16.9867 13.6239 16.8742C13.5114 16.7617 13.3587 16.6984 13.1996 16.6984H8.39961ZM14.2544 12.4984H5.99961C5.36309 12.4984 4.75264 12.7513 4.30255 13.2014C3.85247 13.6515 3.59961 14.2619 3.59961 14.8984V19.6984C3.59961 20.335 3.85247 20.9454 4.30255 21.3955C4.75264 21.8456 5.36309 22.0984 5.99961 22.0984H15.5996C16.2361 22.0984 16.8466 21.8456 17.2967 21.3955C17.7468 20.9454 17.9996 20.335 17.9996 19.6984V18.3964C17.6114 18.5337 17.1878 18.5337 16.7996 18.3964V19.6984C16.7996 20.0167 16.6732 20.3219 16.4481 20.547C16.2231 20.772 15.9179 20.8984 15.5996 20.8984H5.99961C5.68135 20.8984 5.37613 20.772 5.15108 20.547C4.92604 20.3219 4.79961 20.0167 4.79961 19.6984V14.8984C4.79961 14.5802 4.92604 14.275 5.15108 14.0499C5.37613 13.8249 5.68135 13.6984 5.99961 13.6984H13.3016C13.3914 13.4456 13.5365 13.216 13.7264 13.0264L14.2544 12.4984ZM21.5996 9.49844C21.5996 9.33931 21.5364 9.1867 21.4239 9.07417C21.3114 8.96165 21.1587 8.89844 20.9996 8.89844C20.8405 8.89844 20.6879 8.96165 20.5753 9.07417C20.4628 9.1867 20.3996 9.33931 20.3996 9.49844V11.8984C20.3996 12.3758 20.21 12.8337 19.8724 13.1712C19.5348 13.5088 19.077 13.6984 18.5996 13.6984H16.448L17.8244 12.3232C17.9371 12.2106 18.0004 12.0578 18.0004 11.8984C18.0004 11.7391 17.9371 11.5863 17.8244 11.4736C17.7117 11.361 17.5589 11.2977 17.3996 11.2977C17.2403 11.2977 17.0875 11.361 16.9748 11.4736L14.5748 13.8736C14.5189 13.9294 14.4746 13.9956 14.4444 14.0685C14.4141 14.1414 14.3985 14.2195 14.3985 14.2984C14.3985 14.3774 14.4141 14.4555 14.4444 14.5284C14.4746 14.6013 14.5189 14.6675 14.5748 14.7232L16.9748 17.1232C17.0875 17.2359 17.2403 17.2992 17.3996 17.2992C17.5589 17.2992 17.7117 17.2359 17.8244 17.1232C17.9371 17.0106 18.0004 16.8578 18.0004 16.6984C18.0004 16.5391 17.9371 16.3863 17.8244 16.2736L16.448 14.8984H18.5996C18.9936 14.8984 19.3837 14.8208 19.7477 14.6701C20.1116 14.5193 20.4424 14.2983 20.7209 14.0198C20.9995 13.7412 21.2205 13.4105 21.3712 13.0465C21.522 12.6825 21.5996 12.2924 21.5996 11.8984V9.49844Z" fill="#808080"/>
+                                    </svg>
+                                        
+                                </div>                                      
+                                    
+                                <div class="trans">
+                                    <h4>Convert Currency</h4>
+                                    <p>Add money via currency conversion</p>
+                                </div>
+                                    
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- USD BANK TRANSFER MODAL-->
+                <div class="bank_transfer_modal_container" id="usdBankContainer">
+                    <div class="bank_transfer_modal_main">
+                        <div class="close_bank_box">
+                            <h4>Bank Transfer</h4>
+                            <svg id="closeUsdBankContainer" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M25.3337 6.66797L6.66699 25.3346" stroke="#2A353D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6.66699 6.66797L25.3337 25.3346" stroke="#2A353D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                        </div>
+
+                        <div class="bank_trans_contents">
+                            <div class="box1">
+                                <p>Account Number</p>
+
+                                <div class="box_num">
+                                    <h4 class="usd-account-num" id="usdAccountNum">321 654 0987</h4>
+
+                                    <svg class="copy_usd_account" id="copyUsdAccount" width="24" height="29" viewBox="0 0 24 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 11.5C6 8.672 6 7.257 6.879 6.379C7.757 5.5 9.172 5.5 12 5.5H15C17.828 5.5 19.243 5.5 20.121 6.379C21 7.257 21 8.672 21 11.5V16.5C21 19.328 21 20.743 20.121 21.621C19.243 22.5 17.828 22.5 15 22.5H12C9.172 22.5 7.757 22.5 6.879 21.621C6 20.743 6 19.328 6 16.5V11.5Z" stroke="#074DA2" stroke-width="1.5"/>
+                                        <path d="M6 19.5C5.20435 19.5 4.44129 19.1839 3.87868 18.6213C3.31607 18.0587 3 17.2956 3 16.5V10.5C3 6.729 3 4.843 4.172 3.672C5.344 2.501 7.229 2.5 11 2.5H15C15.7956 2.5 16.5587 2.81607 17.1213 3.37868C17.6839 3.94129 18 4.70435 18 5.5" stroke="#074DA2" stroke-width="1.5"/>
+                                    </svg>                                       
+                                </div>
+                            </div>
+
+                            <div class="box1">
+                                <p>Routing Number</p>
+
+                                <div class="box_num">
+                                    <h4 class="routing-num" id="routingNum">231 604 078</h4>
+
+                                    <svg class="copy_routing_num" id="copyRoutingNum" width="24" height="29" viewBox="0 0 24 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 11.5C6 8.672 6 7.257 6.879 6.379C7.757 5.5 9.172 5.5 12 5.5H15C17.828 5.5 19.243 5.5 20.121 6.379C21 7.257 21 8.672 21 11.5V16.5C21 19.328 21 20.743 20.121 21.621C19.243 22.5 17.828 22.5 15 22.5H12C9.172 22.5 7.757 22.5 6.879 21.621C6 20.743 6 19.328 6 16.5V11.5Z" stroke="#074DA2" stroke-width="1.5"/>
+                                        <path d="M6 19.5C5.20435 19.5 4.44129 19.1839 3.87868 18.6213C3.31607 18.0587 3 17.2956 3 16.5V10.5C3 6.729 3 4.843 4.172 3.672C5.344 2.501 7.229 2.5 11 2.5H15C15.7956 2.5 16.5587 2.81607 17.1213 3.37868C17.6839 3.94129 18 4.70435 18 5.5" stroke="#074DA2" stroke-width="1.5"/>
+                                    </svg>                                       
+                                </div>
+                            </div>
+
+                            <div class="box2">
+                                <p class="p1">Bank Name</p>
+                                <p class="p2">BANK OF AMERICA</p>                              
+                            </div>
+
+                            <div class="box2">
+                                <p class="p1">Name</p>
+                                <p class="p2">Paidley</p>                              
+                            </div>
+                        </div>
+
+                        <div class="copy_text_box" id="copyTextBox2">
+                            <p>Copied!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CUSTOMER SUPPORT LINK -->
+                <div class="customer_support_link_box">
+                    <a href="customer-support.html">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.09 7.00005C8.3251 6.33171 8.78915 5.76815 9.39995 5.40918C10.0108 5.05021 10.7289 4.91899 11.4272 5.03876C12.1255 5.15853 12.7588 5.52157 13.2151 6.06357C13.6713 6.60558 13.9211 7.29157 13.92 8.00005C13.92 10 10.92 11 10.92 11M11 15H11.01M6.9 18C8.80858 18.9791 11.0041 19.2443 13.0909 18.7478C15.1777 18.2514 17.0186 17.0259 18.2818 15.2922C19.545 13.5586 20.1474 11.4308 19.9806 9.29221C19.8137 7.15366 18.8886 5.14502 17.3718 3.62824C15.855 2.11146 13.8464 1.1863 11.7078 1.01946C9.56929 0.852628 7.44147 1.45509 5.70782 2.71829C3.97417 3.98149 2.74869 5.82236 2.25222 7.90916C1.75575 9.99596 2.02094 12.1915 3 14.1L1 20L6.9 18Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </a>
+                </div>
+
+                <!-- MOBILE FOOTER NAVBAR -->
+                <div class="mobile_footer_navbar">
+                    <div class="mobile_footer_nav_main">
+                        <a href="index.html">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.66602 4.9974C1.66602 3.42573 1.66602 2.64073 2.15435 2.1524C2.64268 1.66406 3.42768 1.66406 4.99935 1.66406C6.57102 1.66406 7.35602 1.66406 7.84435 2.1524C8.33268 2.64073 8.33268 3.42573 8.33268 4.9974V6.66406C8.33268 8.23573 8.33268 9.02073 7.84435 9.50906C7.35602 9.9974 6.57102 9.9974 4.99935 9.9974C3.42768 9.9974 2.64268 9.9974 2.15435 9.50906C1.66602 9.02073 1.66602 8.23573 1.66602 6.66406V4.9974ZM1.66602 15.8307C1.66602 15.0541 1.66602 14.6657 1.79268 14.3599C1.87644 14.1575 1.99926 13.9737 2.15412 13.8188C2.30898 13.664 2.49283 13.5412 2.69518 13.4574C3.00102 13.3307 3.38935 13.3307 4.16602 13.3307H5.83268C6.60935 13.3307 6.99768 13.3307 7.30352 13.4574C7.50587 13.5412 7.68972 13.664 7.84458 13.8188C7.99944 13.9737 8.12225 14.1575 8.20602 14.3599C8.33268 14.6657 8.33268 15.0541 8.33268 15.8307C8.33268 16.6074 8.33268 16.9957 8.20602 17.3016C8.12225 17.5039 7.99944 17.6878 7.84458 17.8426C7.68972 17.9975 7.50587 18.1203 7.30352 18.2041C6.99768 18.3307 6.60935 18.3307 5.83268 18.3307H4.16602C3.38935 18.3307 3.00102 18.3307 2.69518 18.2041C2.49283 18.1203 2.30898 17.9975 2.15412 17.8426C1.99926 17.6878 1.87644 17.5039 1.79268 17.3016C1.66602 16.9957 1.66602 16.6074 1.66602 15.8307ZM11.666 13.3307C11.666 11.7591 11.666 10.9741 12.1543 10.4857C12.6427 9.9974 13.4277 9.9974 14.9993 9.9974C16.571 9.9974 17.356 9.9974 17.8443 10.4857C18.3327 10.9741 18.3327 11.7591 18.3327 13.3307V14.9974C18.3327 16.5691 18.3327 17.3541 17.8443 17.8424C17.356 18.3307 16.571 18.3307 14.9993 18.3307C13.4277 18.3307 12.6427 18.3307 12.1543 17.8424C11.666 17.3541 11.666 16.5691 11.666 14.9974V13.3307ZM11.666 4.16406C11.666 3.3874 11.666 2.99906 11.7927 2.69323C11.8764 2.49088 11.9993 2.30702 12.1541 2.15217C12.309 1.99731 12.4928 1.87449 12.6952 1.79073C13.001 1.66406 13.3893 1.66406 14.166 1.66406H15.8327C16.6093 1.66406 16.9977 1.66406 17.3035 1.79073C17.5059 1.87449 17.6897 1.99731 17.8446 2.15217C17.9994 2.30702 18.1223 2.49088 18.206 2.69323C18.3327 2.99906 18.3327 3.3874 18.3327 4.16406C18.3327 4.94073 18.3327 5.32906 18.206 5.6349C18.1223 5.83724 17.9994 6.0211 17.8446 6.17596C17.6897 6.33082 17.5059 6.45364 17.3035 6.5374C16.9977 6.66406 16.6093 6.66406 15.8327 6.66406H14.166C13.3893 6.66406 13.001 6.66406 12.6952 6.5374C12.4928 6.45364 12.309 6.33082 12.1541 6.17596C11.9993 6.0211 11.8764 5.83724 11.7927 5.6349C11.666 5.32906 11.666 4.94073 11.666 4.16406Z" stroke="#808080" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                            <h3>Home</h3>
+                        </a>
+
+                        <a href="wallets.html" class="active">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.6667 12.1667H14.675M6.33333 6.33333H16.3333C16.7754 6.33333 17.1993 6.50893 17.5118 6.82149C17.8244 7.13405 18 7.55797 18 8V16.3333C18 16.7754 17.8244 17.1993 17.5118 17.5118C17.1993 17.8244 16.7754 18 16.3333 18H4.66667C4.22464 18 3.80072 17.8244 3.48816 17.5118C3.17559 17.1993 3 16.7754 3 16.3333V4.66667C3 4.22464 3.17559 3.80072 3.48816 3.48816C3.80072 3.17559 4.22464 3 4.66667 3H16.3333" stroke="#808080" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                            <h3>Wallets</h3>                              
+                        </a>
+
+                        <a href="cards.html">
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.66699 8.83073H18.3337M3.33366 4.66406H16.667C17.5875 4.66406 18.3337 5.41025 18.3337 6.33073V14.6641C18.3337 15.5845 17.5875 16.3307 16.667 16.3307H3.33366C2.41318 16.3307 1.66699 15.5845 1.66699 14.6641V6.33073C1.66699 5.41025 2.41318 4.66406 3.33366 4.66406Z" stroke="#808080" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                               
+                            <h3>Cards</h3>
+                        </a>
+
+                        <a href="transactions.html">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.16634 3L3.83301 6.33333M3.83301 6.33333L7.16634 9.66667M3.83301 6.33333H17.1663M13.833 18L17.1663 14.6667M17.1663 14.6667L13.833 11.3333M17.1663 14.6667H3.83301" stroke="#808080" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                            <h3>Transactions</h3>
+                        </a>
+
+                        <a href="settings.html">
+                            <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.1762 1.5H7.8242C7.39985 1.5 6.99288 1.66857 6.69283 1.96863C6.39277 2.26869 6.2242 2.67565 6.2242 3.1V3.244C6.22391 3.52458 6.14984 3.80015 6.00943 4.04307C5.86901 4.28599 5.66719 4.48771 5.4242 4.628L5.0802 4.828C4.83697 4.96843 4.56106 5.04236 4.2802 5.04236C3.99934 5.04236 3.72343 4.96843 3.4802 4.828L3.3602 4.764C2.99305 4.55221 2.55687 4.49476 2.1474 4.60425C1.73793 4.71374 1.38864 4.98123 1.1762 5.348L1.0002 5.652C0.788407 6.01915 0.730952 6.45533 0.840443 6.8648C0.949935 7.27427 1.21743 7.62356 1.5842 7.836L1.7042 7.916C1.94602 8.05561 2.14709 8.25607 2.28744 8.49746C2.42778 8.73886 2.50251 9.01278 2.5042 9.292V9.7C2.50532 9.98194 2.43192 10.2592 2.29143 10.5036C2.15095 10.7481 1.94836 10.951 1.7042 11.092L1.5842 11.164C1.21743 11.3764 0.949935 11.7257 0.840443 12.1352C0.730952 12.5447 0.788407 12.9809 1.0002 13.348L1.1762 13.652C1.38864 14.0188 1.73793 14.2863 2.1474 14.3958C2.55687 14.5052 2.99305 14.4478 3.3602 14.236L3.4802 14.172C3.72343 14.0316 3.99934 13.9576 4.2802 13.9576C4.56106 13.9576 4.83697 14.0316 5.0802 14.172L5.4242 14.372C5.66719 14.5123 5.86901 14.714 6.00943 14.9569C6.14984 15.1998 6.22391 15.4754 6.2242 15.756V15.9C6.2242 16.3243 6.39277 16.7313 6.69283 17.0314C6.99288 17.3314 7.39985 17.5 7.8242 17.5H8.1762C8.60054 17.5 9.00751 17.3314 9.30757 17.0314C9.60763 16.7313 9.7762 16.3243 9.7762 15.9V15.756C9.77648 15.4754 9.85055 15.1998 9.99097 14.9569C10.1314 14.714 10.3332 14.5123 10.5762 14.372L10.9202 14.172C11.1634 14.0316 11.4393 13.9576 11.7202 13.9576C12.0011 13.9576 12.277 14.0316 12.5202 14.172L12.6402 14.236C13.0073 14.4478 13.4435 14.5052 13.853 14.3958C14.2625 14.2863 14.6118 14.0188 14.8242 13.652L15.0002 13.34C15.212 12.9729 15.2694 12.5367 15.16 12.1272C15.0505 11.7177 14.783 11.3684 14.4162 11.156L14.2962 11.092C14.052 10.951 13.8494 10.7481 13.709 10.5036C13.5685 10.2592 13.4951 9.98194 13.4962 9.7V9.3C13.4951 9.01806 13.5685 8.74084 13.709 8.49639C13.8494 8.25195 14.052 8.04897 14.2962 7.908L14.4162 7.836C14.783 7.62356 15.0505 7.27427 15.16 6.8648C15.2694 6.45533 15.212 6.01915 15.0002 5.652L14.8242 5.348C14.6118 4.98123 14.2625 4.71374 13.853 4.60425C13.4435 4.49476 13.0073 4.55221 12.6402 4.764L12.5202 4.828C12.277 4.96843 12.0011 5.04236 11.7202 5.04236C11.4393 5.04236 11.1634 4.96843 10.9202 4.828L10.5762 4.628C10.3332 4.48771 10.1314 4.28599 9.99097 4.04307C9.85055 3.80015 9.77648 3.52458 9.7762 3.244V3.1C9.7762 2.67565 9.60763 2.26869 9.30757 1.96863C9.00751 1.66857 8.60054 1.5 8.1762 1.5Z" stroke="#808080" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.0002 11.9C9.32568 11.9 10.4002 10.8255 10.4002 9.5C10.4002 8.17452 9.32568 7.1 8.0002 7.1C6.67471 7.1 5.6002 8.17452 5.6002 9.5C5.6002 10.8255 6.67471 11.9 8.0002 11.9Z" stroke="#808080" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                            <h3>Settings</h3>                               
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- GET THE AVATAR DROPDOWN AND USER PROFILE -->
+    <script>
+        const avatarBox = document.getElementById('avatarBox');
+        const profileDropDown = document.getElementById('profileDropDown');
+
+        let openUserProfileContainer = document.getElementById('openUserProfileContainer');
+        let userProfileContainer = document.getElementById('userProfileContainer');
+        let closeUserProfileContainer = document.getElementById('closeUserProfileContainer');
+        const uploadPhoto = document.getElementById("uploadPhoto");
+        const viewPhoto = document.getElementById("viewPhoto");
+        let fileInput = document.getElementById("file-input");
+        let textCopied = document.getElementById('textCopied');
+        let paidleyTag = document.getElementById('paidleyTag');
+        let copyPaidleyTag = document.getElementById('copyPaidleyTag');
+
+      
+        // Function to toggle the dropdown
+        const toggleDropdown = () => {
+          // Check if the dropdown is currently visible
+          const isVisible = profileDropDown.style.display === 'block';
+          profileDropDown.style.display = isVisible ? 'none' : 'block';
+        };
+      
+        // Function to hide the dropdown
+        const hideDropdown = () => {
+          profileDropDown.style.display = 'none';
+        };
+      
+        avatarBox.addEventListener('click', (event) => {
+          // Stop the click event from propagating to the document
+          event.stopPropagation();
+          toggleDropdown();
+        });
+      
+        // Add click event listener to the document to close the dropdown when clicking elsewhere
+        document.addEventListener('click', (event) => {
+          if (!avatarBox.contains(event.target)) {
+            hideDropdown();
+          }
+        });
+
+        openUserProfileContainer.addEventListener('click', (event) => {
+            userProfileContainer.style.display = 'block';
+            profileDropDown.style.display = 'none';
+            event.stopPropagation(); // Prevent the event from bubbling up to the document
+        });
+
+        closeUserProfileContainer.addEventListener('click', () => {
+            userProfileContainer.style.display = 'none';
+        });
+
+
+        // Attach click event to the button to trigger file input
+        uploadPhoto.addEventListener("click", function () {
+            fileInput.click();
+        });
+
+        // Function to preview the uploaded image
+        function previewImage(event) {
+            let input = event.target;
+            let reader = new FileReader();
+
+            // Once the file is loaded, set the preview image source
+            reader.onload = function () {
+                viewPhoto.src = reader.result;
+            };
+
+            // If the file input has a file, read the file and display it
+            if (input.files && input.files[0]) {
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+       // Copy Paidley Tag to clipboard and show the "Copied!" message
+        copyPaidleyTag.addEventListener('click', () => {
+            // Copy the text to the clipboard
+            const tagText = paidleyTag.textContent;
+            navigator.clipboard.writeText(tagText).then(() => {
+                // Show the "Copied!" message
+                textCopied.style.display = 'block';
+
+                // Hide the message after 2 seconds
+                setTimeout(() => {
+                   textCopied.style.display = 'none';
+                }, 2000);
+            });
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!userProfileContainer.contains(event.target) && event.target !== openUserProfileContainer) {
+                userProfileContainer.style.display = 'none';
+            }
+        });
+
+
+    </script>
+
+    <!-- NOTIFICATION BELL DROPDOWN -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Show notifications when notification bell is clicked
+            const notificationBell = document.getElementById("notificationBell");
+            const notificationContainer = document.getElementById("notificationContainer");
+            const overlay = document.getElementById("messageOverlay");
+            const messageContents = document.querySelectorAll(".message_content");
+            const notificationBoxes = document.querySelectorAll(".notifications_box");
+
+            notificationBell.addEventListener("click", (event) => {
+                notificationContainer.classList.toggle("show");
+                event.stopPropagation(); // Prevent click from propagating to document
+            });
+
+            // Handle showing the message content when a notification box is clicked
+            notificationBoxes.forEach(box => {
+                box.addEventListener("click", () => {
+                    // Hide all message content first
+                    messageContents.forEach(content => content.style.display = "none");
+                    
+                    // Show the corresponding message content and overlay
+                    const messageId = box.getAttribute("data-message");
+                    document.querySelector(`.message_content[data-message="${messageId}"]`).style.display = "block";
+                    overlay.style.display = "block";
+
+                    // Change background color to show it's been clicked
+                    box.style.backgroundColor = "#fff";
+                });
+            });
+
+            // Close message content and overlay
+            document.querySelectorAll(".closeMessage").forEach(closeBtn => {
+                closeBtn.addEventListener("click", () => {
+                    // Hide all message content and overlay
+                    messageContents.forEach(content => content.style.display = "none");
+                    overlay.style.display = "none";
+                });
+            });
+
+            // Click outside the notificationContainer to close it
+            document.addEventListener("click", (event) => {
+                if (!notificationContainer.contains(event.target) && !notificationBell.contains(event.target)) {
+                    notificationContainer.classList.remove("show");
+                }
+            });
+
+            // Click outside the message to close it
+            overlay.addEventListener("click", () => {
+                messageContents.forEach(content => content.style.display = "none");
+                overlay.style.display = "none";
+            });
+        });
+
+    </script>
+
+    <!-- USD WALLET HIDE AND SHOW -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let showWallet = document.getElementById("showWallet");
+            let hideWallet = document.getElementById("hideWallet");
+            let walletAmount = document.getElementById("amount2");
+
+            const actualAmount2 = walletAmount.innerText;
+
+            showWallet.addEventListener("click", () => {
+                walletAmount.innerText = actualAmount2;
+                showWallet.style.display = 'none';
+                hideWallet.style.display = 'inline-block';
+            });
+
+            hideWallet.addEventListener("click", () => {
+                walletAmount.innerText = '*******';
+                hideWallet.style.display = 'none';
+                showWallet.style.display = 'inline-block';
+            });
+        });
+
+    </script>
+
+    <!-- GET THE MOBILE AVATAR DROPDOWN AND PROFILE -->
+    <script>
+        const avatarBox2 = document.getElementById('navAvatarBox');
+        const profileDropDown2 = document.getElementById('navProfileDropDown');
+
+        
+        let openUserProfileContainer2 = document.getElementById('openUserProfileContainer2');
+        let userProfileContainer2 = document.getElementById('userProfileContainer2');
+        let closeUserProfileContainer2 = document.getElementById('closeUserProfileContainer2');
+        const uploadPhoto2 = document.getElementById("uploadPhoto2");
+        const viewPhoto2 = document.getElementById("viewPhoto2");
+        let fileInput2 = document.getElementById("file-input2");
+        let textCopied2 = document.getElementById('textCopied2');
+        let paidleyTag2 = document.getElementById('paidleyTag2');
+        let copyPaidleyTag2 = document.getElementById('copyPaidleyTag2');
+      
+        // Function to toggle the dropdown
+        const toggleDropdown2 = () => {
+          // Check if the dropdown is currently visible
+          const isVisible2 = profileDropDown2.style.display === 'block';
+          profileDropDown2.style.display = isVisible2 ? 'none' : 'block';
+        };
+      
+        // Function to hide the dropdown
+        const hideDropdown2 = () => {
+          profileDropDown2.style.display = 'none';
+        };
+      
+        avatarBox2.addEventListener('click', (event) => {
+          // Stop the click event from propagating to the document
+          event.stopPropagation();
+          toggleDropdown2();
+        });
+      
+        // Add click event listener to the document to close the dropdown when clicking elsewhere
+        document.addEventListener('click', (event) => {
+          if (!avatarBox2.contains(event.target)) {
+            hideDropdown2();
+          }
+        });
+
+
+        openUserProfileContainer2.addEventListener('click', (event) => {
+            userProfileContainer2.style.display = 'block';
+            event.stopPropagation();
+        });
+
+        closeUserProfileContainer2.addEventListener('click', () => {
+            userProfileContainer2.style.display = 'none';
+            profileDropDown2.style.display = 'none';
+            
+        });
+
+
+        // Attach click event to the button to trigger file input
+        uploadPhoto2.addEventListener("click", function () {
+            fileInput2.click();
+        });
+
+        // Function to preview the uploaded image
+        function previewImage2(event) {
+            let input = event.target;
+            let reader = new FileReader();
+
+            // Once the file is loaded, set the preview image source
+            reader.onload = function () {
+                viewPhoto2.src = reader.result;
+            };
+
+            // If the file input has a file, read the file and display it
+            if (input.files && input.files[0]) {
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+       // Copy Paidley Tag to clipboard and show the "Copied!" message
+        copyPaidleyTag2.addEventListener('click', () => {
+            // Copy the text to the clipboard
+            const tagText2 = paidleyTag2.textContent;
+            navigator.clipboard.writeText(tagText2).then(() => {
+                textCopied2.style.display = 'block';
+
+                setTimeout(() => {
+                   textCopied2.style.display = 'none';
+                }, 2000);
+            });
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!userProfileContainer2.contains(event.target) && event.target !== openUserProfileContainer2) {
+                userProfileContainer2.style.display = 'none';
+            }
+        });
+    </script>
+
+    <!-- MOBILE NOTIFICATION BELL DROPDOWN -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const mobileNotificationBell = document.getElementById("bellMage");
+            const mobileNotificationContainer = document.getElementById("mobileNotificationContainer");
+            const mobileOverlay = document.getElementById("mobileMessageOverlay");
+            const mobileMessageContents = document.querySelectorAll(".mobile_message_content");
+            const mobileNotificationBoxes = document.querySelectorAll(".mobile_notifications_box");
+            const closeCont = document.getElementById("closeCont");
+
+            mobileNotificationBell.addEventListener("click", () => {
+                mobileNotificationContainer.classList.toggle("show");
+            });
+
+            // Handle showing the message content when a notification box is clicked
+            mobileNotificationBoxes.forEach(box => {
+                box.addEventListener("click", () => {
+
+                mobileMessageContents.forEach(content => content.style.display = "none");
+                
+                // Show the corresponding message content and overlay
+                const messageIds = box.getAttribute("data-mobile-message");
+                document.querySelector(`.mobile_message_content[data-mobile-message="${messageIds}"]`).style.display = "block";
+                mobileOverlay.style.display = "block";
+
+                // Change background color to show it's been clicked
+                box.style.backgroundColor = "#fff";
+                });
+            });
+
+            // Close message content and overlay
+            document.querySelectorAll(".mobile_closeMessage").forEach(mobileCloseBtn => {
+                mobileCloseBtn.addEventListener("click", () => {
+                    // Hide all message content and overlay
+                    mobileMessageContents.forEach(content => content.style.display = "none");
+                    mobileOverlay.style.display = "none";
+                });
+            });
+
+            // Close the mobile notification container when the close button is clicked
+            closeCont.addEventListener("click", () => {
+                mobileNotificationContainer.classList.remove("show"); // You can change this if you're using another method to show/hide
+            });
+
+            document.addEventListener("click", (event) => {
+                if (!mobileNotificationContainer.contains(event.target) && !mobileNotificationBell.contains(event.target)) {
+                    mobileNotificationContainer.classList.remove("show");
+                }
+            });
+
+            // Click outside the message to close it
+            mobileOverlay.addEventListener("click", () => {
+                mobileMessageContents.forEach(content => content.style.display = "none");
+                mobileOverlay.style.display = "none";
+            });
+        });
+
+    </script>
+
+    <!-- FOR THE SEND MONEY MODAL TO BANK AND USD BANK TRANSFER -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sendBtn = document.getElementById("sendBtn");
+            const closeSendMoney = document.getElementById("closeSendMoney");
+            const sendMoneyContainer = document.getElementById("sendMoneyContainer");
+            const sendMoneyOverlay = document.getElementById("sendMoneyOverlay");
+
+            let usdAddMoneyContainer = document.getElementById('usdAddMoneyContainer');
+            let openUsdAddMoneyContainer = document.getElementById('openUsdAddMoneyContainer');
+            let closeUsdAddMoneyContainer = document.getElementById('closeUsdAddMoneyContainer');
+            let openUsdBankContainer = document.getElementById('openUsdBankContainer');
+            let usdBankContainer = document.getElementById('usdBankContainer');
+            let closeUsdBankContainer = document.getElementById('closeUsdBankContainer');
+
+            const copyButtonIds = ['copyUsdAccount', 'copyRoutingNum'];
+            const textElementIds = ['usdAccountNum', 'routingNum'];
+            const notificationBoxId = 'copyTextBox2';
+
+            // Open Add Money Modal
+            sendBtn.addEventListener("click", function () {
+                sendMoneyContainer.style.display = "block";
+                sendMoneyOverlay.style.display = "block";
+            });
+
+            // Close Add Money Modal
+            closeSendMoney.addEventListener("click", function () {
+                sendMoneyContainer.style.display = "none";
+                sendMoneyOverlay.style.display = "none";
+            });
+
+            // Close modal and overlay when clicking on the overlay
+            sendMoneyOverlay.addEventListener("click", function () {
+                sendMoneyContainer.style.display = "none";
+                usdBankContainer.style.display = 'none';
+                sendMoneyOverlay.style.display = "none";
+                usdAddMoneyContainer.style.display = 'none';
+            });
+
+
+             //open usd add money container
+             openUsdAddMoneyContainer.addEventListener('click', () => {
+                usdAddMoneyContainer.style.display = 'block';
+                sendMoneyOverlay.style.display = "block";
+            });
+
+            closeUsdAddMoneyContainer.addEventListener('click', () => {
+                usdAddMoneyContainer.style.display = 'none';
+                sendMoneyOverlay.style.display = "none";
+            });
+
+            // usd bank container
+            openUsdBankContainer.addEventListener('click', () => {
+                usdAddMoneyContainer.style.display = 'none';
+                usdBankContainer.style.display = 'block';              
+            });
+
+            closeUsdBankContainer.addEventListener('click', () => {
+                usdBankContainer.style.display = 'none';
+                sendMoneyOverlay.style.display = "none";
+            });
+
+
+            // Function to copy text and show the notification box temporarily
+            function copyTextAndShowNotification(textId) {
+                const textToCopy = document.getElementById(textId).innerText;
+                
+                navigator.clipboard.writeText(textToCopy).then(() => {
+                    const notificationBox = document.getElementById(notificationBoxId);
+                    notificationBox.style.display = 'block'; 
+                    
+                    // Hide the notification box after 2 seconds
+                    setTimeout(() => {
+                    notificationBox.style.display = 'none';
+                    }, 2000);
+
+                });
+            }
+
+            // Add click event listeners to each copy button
+            copyButtonIds.forEach((buttonId, index) => {
+                const textId = textElementIds[index];
+            
+                document.getElementById(buttonId).addEventListener('click', () => {
+                    copyTextAndShowNotification(textId);
+                });
+            });
+
+
+        });
+
+    </script>
+
+    <!-- SHOW OTHER TRANSACTIONS ON DESKTOP -->
+    <script>
+        let seeAll = document.getElementById('seeAll');
+        let otherTransactions = document.querySelectorAll('.other_transactions');
+
+        seeAll.addEventListener('click', () => {
+            console.log('clicked happened');
+            otherTransactions.forEach((transactions) => {
+                transactions.style.display = 'table-row';
+                console.log('transactons has showned');
+            });
+        });
+    </script>
+
+    <!-- SHOW OTHER TRANSACTIONS ON MOBILE -->
+    <script>
+        let mobileSeeAll = document.getElementById('mobileSeeAll');
+        let mobileOtherTransactions = document.querySelectorAll('.mobile_other_transactions');
+
+        mobileSeeAll.addEventListener('click', () => {
+            mobileOtherTransactions.forEach((transaction) => {
+                transaction.style.display = 'flex';
+            });
+        });
+    </script>
+
+
+    
+</body>
+</html>

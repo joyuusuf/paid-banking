@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/fav-icon.png" type="image/x-icon">
+
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="login_container">
+        <!-- mobile login and pattern -->
+        <div class="mobile_login_logo">
+            <div class="mobile_login_box">
+              <img src="assets/images/Paidley-lo.png" alt="login mobile logo">
+              <!-- <img class="mobile_login_partern" src="assets/images/mobile-bg-pattern.png" alt="mobile login pattern"> -->
+              <img class="mobile_login_partern" src="assets/images/arrow-pattern.png" alt="mobile login pattern">
+            </div>
+        </div>
+
+        <div class="login_left">
+            <div class="login_logo">
+                <img src="assets/images/Paidley-lo.png" alt="paidley logo">
+            </div>
+
+            <div class="login_box">
+                <img src="assets/images/login-illustration.png" alt=" login illustration mage">
+            </div>
+
+            <!-- <div class="login_footer">
+                <p>&copy; Paidley <span class="year"></span></p>
+                <div class="login_footer_right">
+                    <a href="#">Help Center</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div> -->
+            <div class="login_footer">
+                <div class="login_footer_right">
+                    <p>&copy; Paidley <span class="year"></span></p>
+                    <div class="box">
+                        <a href="#">Help Center</a>
+                        <a href="#">Terms of Service</a>
+                   </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="login_right">
+            <div class="login_main">
+                <div class="login_right_box">
+                    <div class="top-head">
+                        <h3>Log in</h3>
+                        <p> Log in to take control of your finances today.</p>
+                    </div>
+
+                    <form action="" id="loginForm">
+                        <div class="login_email">
+                            <label>Email</label> 
+                            <input type="text" id="email" placeholder="Enter your email address" required>  
+                            <p class="error-message" id="emailError"></p>
+                        </div>
+
+                        <div class="login_password_box">
+                            <label>Password</label>
+                            <div class="password_flex">
+                                <input type="password"  id="password" placeholder="Enter your password" required>
+                                <img class="show" id="show" src="assets/images/show-eye.png" alt="show eye">
+                                <img class="hide" id="hide" src="assets/images/hide-eye.png" alt="hide eye">
+                            </div>
+
+                            <div class="error_box">
+                                <div class="error_content">
+                                    <img src="assets/svg/error-icon.svg" alt="error icon">
+                                    <p id="passwordError">Field required</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="login_flex">
+                            <button class="login_btn" type="submit" disabled>Login</button>
+                            <p>Forgot password? <a href="reset-password.html">Reset here</a></p>
+                        </div>
+                    </form>
+
+                    <div class="login_bottom">
+                        <p>Don’t have an account? <a href="create-account.html">Create account</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- mobile footer section -->
+        <div class="mobile_login_footer">
+            <div class="mobile_login_footer_box">
+                <p>&copy; Paidley <span class="year"></span></p>
+                <div class="mobile_login_footer_right">
+                    <a href="#">Help Center</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GET ALL YEAR  -->
+    <script>
+        let currentYear = new Date().getFullYear();
+            document.querySelectorAll(".year").forEach(function (element) {
+                element.textContent = currentYear;
+        });
+    </script>
+    
+
+    <!-- PASSWORD HIDE AND SHOW, ALSO BUTTON ENABLE -->
+    <script>
+        const passwordField = document.getElementById("password");
+        const emailField = document.getElementById("email");
+        const loginButton = document.querySelector(".login_btn");
+        const showIcon = document.getElementById("show");
+        const hideIcon = document.getElementById("hide");
+
+        // Function to toggle password visibility
+        function togglePasswordVisibility() {
+            showIcon.addEventListener("click", function() {
+                passwordField.type = "text";
+                showIcon.style.display = "none";
+                hideIcon.style.display = "inline-block";
+            });
+
+            hideIcon.addEventListener("click", function() {
+                passwordField.type = "password";
+                hideIcon.style.display = "none";
+                showIcon.style.display = "inline-block";
+            });
+        }
+
+        // Function to enable the login button
+        function enableLoginButton() {
+            if (emailField.value.trim() !== "" && passwordField.value.trim() !== "") {
+                loginButton.disabled = false;
+            } else {
+                loginButton.disabled = true;
+            }
+        }
+
+        // Event listeners for the input fields
+        emailField.addEventListener("input", enableLoginButton);
+        passwordField.addEventListener("input", enableLoginButton);
+
+        // Initialize the functionality
+        togglePasswordVisibility();
+
+    </script>
+
+
+</body>
+</html>

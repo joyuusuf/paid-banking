@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Pin</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="assets/images/fav-icon.png" type="image/x-icon">
+
+  <!-- css stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <div class="reset_password_container">
+
+    <!-- mobile login and pattern -->
+    <div class="reset_password_mobile_logo">
+      <div class="reset_password_bo">
+        <img src="assets/images/Paidley-lo.png" alt="reset password mobile logo">
+        <img  class="reset_password_mobile_partern" src="assets/images/arrow-pattern.png" alt="reset password mobile logo">
+      </div>
+    </div>
+
+    <div class="reset_password_left">
+      <div class="reset_password_logo">
+          <img src="assets/images/Paidley-lo.png" alt="paidley logo">
+      </div>
+
+      <div class="reset_password_box">
+          <img src="assets/images/create-pin-illustration.png" alt="create mage">
+      </div>
+
+        <!-- <div class="reset_password_footer">
+            <p>&copy; Paidley <span class="year"></span></p>
+            <div class="reset_password_footer_right">
+                <a href="#">Help Center</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div> -->
+
+
+      <div class="kyc_footer">
+        <div class="kyc_footer_main1">
+          <p>&copy; Paidley <span  class="year"></span></p>
+          <div class="kyc_footer_right">
+            <a href="#">Help Center</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="reset_password_right">
+      <div class="create_pin_container">
+          <div class="create_pin_box">
+            <div class="top-head">
+                <h3>Create Transfer Pin</h3>
+                <p>Please enter a transfer pin. This will be used for all <br> your transactions</p>
+            </div>
+
+            <form id="pinForm">
+                <div class="pin_content">
+                    <div class="pin-input-group">
+                        <label for="transferPin">Transfer pin <span>*</span></label>
+                        <div class="pin-inputs_box">
+                            <input type="text" maxlength="1" class="pin-input" required>
+                            <input type="text" maxlength="1" class="pin-input" required>
+                            <input type="text" maxlength="1" class="pin-input" required>
+                            <input type="text" maxlength="1" class="pin-input" required>
+                        </div>
+                    </div>
+            
+                    <div class="pin-input-group2">
+                        <label for="confirmPin">Confirm transfer pin <span>*</span></label>
+                        <div class="pin-inputs2_box">
+                            <input type="text" maxlength="1" class="pin-input2" required>
+                            <input type="text" maxlength="1" class="pin-input2" required>
+                            <input type="text" maxlength="1" class="pin-input2" required>
+                            <input type="text" maxlength="1" class="pin-input2" required>
+                        </div>
+                    </div>
+
+                    <!-- <div class="create_pin_error_con">
+                        <div class="create_pin_error_message">
+                            <img src="assets/svg/error-icon.svg" alt="error icon">
+                            <p>Password does not match</p>
+                        </div>
+                    </div> -->
+
+                </div>
+
+                <!-- <div class="create_pin_error_con">
+                    <div class="create_pin_error_message">
+                        <img src="assets/svg/error-icon.svg" alt="error icon">
+                        <p>Password does not match</p>
+                    </div>
+                </div> -->
+        
+                <button type="submit" class="create_pin_btn" disabled>Create pin</button>
+            </form>
+          </div>
+      </div>
+    </div>
+
+    <!-- mobile footer section -->
+    <div class="reset_password_mobile_footer">
+      <div class="reset_password_mobile_footer_box">
+        <p>&copy; Paidley <span class="year"></span></p>
+        <div class="mobile_footer_flex">
+          <a href="#">Help Center</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+      
+  </div>
+
+
+  <!-- GET YEAR -->
+  <script>
+    let currentYear = new Date().getFullYear();
+    document.querySelectorAll(".year").forEach(function (element) {
+      element.textContent = currentYear;
+    });
+  </script>
+
+
+  <script>
+    // Variables for readability
+    const pinInputs = document.querySelectorAll('.pin-input');
+    const pinInputs2 = document.querySelectorAll('.pin-input2');
+    const createPinBtn = document.querySelector('.create_pin_btn');
+      
+    // Function to validate if PIN and confirm PIN match
+    function validatePinMatch() {
+        let pin = '';
+        let confirmPin = '';
+      
+        pinInputs.forEach(input => pin += input.value);
+        pinInputs2.forEach(input => confirmPin += input.value);
+      
+        // if (pin === confirmPin && pin.length === 6 && confirmPin.length === 6) {
+        //   createPinBtn.disabled = false;   
+        // } else {
+        //   createPinBtn.disabled = true;  
+        // }
+
+        if (pin === confirmPin && pin.length === 4 && confirmPin.length === 4) {
+          createPinBtn.disabled = false;   
+        } else {
+          createPinBtn.disabled = true;  
+        }
+      }
+        
+    // Function to move focus to the next input
+    function moveToNextInput(currentInput, inputArray) {
+      const currentIndex = Array.from(inputArray).indexOf(currentInput);
+      if (currentInput.value !== '' && currentIndex < inputArray.length - 1) {
+        inputArray[currentIndex + 1].focus(); // Move to the next input
+      }
+    }
+    
+    // Function to move focus to the previous input on backspace
+    function moveToPreviousInput(currentInput, inputArray) {
+      const currentIndex = Array.from(inputArray).indexOf(currentInput);
+      if (currentIndex > 0 && currentInput.value === '') {
+        inputArray[currentIndex - 1].focus(); // Move to the previous input
+      }
+    }
+  
+    // Add event listeners to pin inputs
+    pinInputs.forEach(input => {
+    input.addEventListener('input', (e) => {
+      if (!/^[0-9]$/.test(e.target.value)) {
+        e.target.value = ''; // Allow only numbers
+      }
+      moveToNextInput(input, pinInputs); // Move to the next input
+      validatePinMatch();  // Validate pin match on each input
+    });
+  
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Backspace') {
+        moveToPreviousInput(input, pinInputs); // Move back on backspace
+      }
+    });
+  });
+    
+    // Add event listeners to confirm pin inputs
+    pinInputs2.forEach(input => {
+      input.addEventListener('input', (e) => {
+        if (!/^[0-9]$/.test(e.target.value)) {
+          e.target.value = ''; // Allow only numbers
+        }
+        moveToNextInput(input, pinInputs2); // Move to next input
+        validatePinMatch(); // Validate pin match after each input
+      });
+    
+      input.addEventListener('keydown', (e) => {
+        if (e.key === 'Backspace') {
+          moveToPreviousInput(input, pinInputs2); // Move back on backspace
+        }
+      });
+    });
+  </script>
+  
+
+
+  
+  <!-- <script>
+      // Variables for readability
+      const pinInputs = document.querySelectorAll('.pin-input');
+      const pinInputs2 = document.querySelectorAll('.pin-input2');
+      const createPinBtn = document.querySelector('.create_pin_btn');
+      
+      // Function to validate if PIN and confirm PIN match
+      function validatePinMatch() {
+        let pin = '';
+        let confirmPin = '';
+      
+        pinInputs.forEach(input => pin += input.value);
+        pinInputs2.forEach(input => confirmPin += input.value);
+      
+        if (pin === confirmPin && pin.length === 6 && confirmPin.length === 6) {
+          createPinBtn.disabled = false;    // Enable the button
+        } else {
+          createPinBtn.disabled = true;     // Disable the button
+        }
+      }
+      
+      // Function to make the pin visible for 5 seconds
+      function makePinVisibleTemporarily(input) {
+        const originalType = input.type;
+        input.type = 'text'; // Make it visible
+        setTimeout(() => {
+          input.type = originalType; // Revert back after 1 second
+        }, 1000);
+      }
+      
+      // Function to move focus to the next input
+      function moveToNextInput(currentInput, inputArray) {
+        const currentIndex = Array.from(inputArray).indexOf(currentInput);
+        if (currentInput.value !== '' && currentIndex < inputArray.length - 1) {
+          inputArray[currentIndex + 1].focus(); // Move to the next input
+        }
+      }
+      
+      // Function to move focus to the previous input on backspace
+      function moveToPreviousInput(currentInput, inputArray) {
+        const currentIndex = Array.from(inputArray).indexOf(currentInput);
+        if (currentIndex > 0 && currentInput.value === '') {
+          inputArray[currentIndex - 1].focus(); // Move to the previous input
+        }
+      }
+      
+      // Add event listeners to pin inputs
+      pinInputs.forEach(input => {
+        input.addEventListener('input', (e) => {
+          if (!/^[0-9]$/.test(e.target.value)) {
+            e.target.value = ''; // Allow only numbers
+          }
+          makePinVisibleTemporarily(input); // Show for 5 seconds
+          moveToNextInput(input, pinInputs); // Move to the next input
+          validatePinMatch();  // Validate pin match on each input
+        });
+      
+        input.addEventListener('keydown', (e) => {
+          if (e.key === 'Backspace') {
+            moveToPreviousInput(input, pinInputs); // Move back on backspace
+          }
+        });
+      });
+      
+      // Add event listeners to confirm pin inputs
+      pinInputs2.forEach(input => {
+        input.addEventListener('input', (e) => {
+          if (!/^[0-9]$/.test(e.target.value)) {
+            e.target.value = ''; // Allow only numbers
+          }
+          makePinVisibleTemporarily(input); // Show for 5 seconds
+          moveToNextInput(input, pinInputs2); // Move to next input
+          validatePinMatch(); // Validate pin match after each input
+        });
+      
+        input.addEventListener('keydown', (e) => {
+          if (e.key === 'Backspace') {
+            moveToPreviousInput(input, pinInputs2); // Move back on backspace
+          }
+        });
+      });
+    </script> -->
+  
+
+  <!-- <script>
+                                                // Variables for readability
+const pinInputs = document.querySelectorAll('.pin-input');
+const pinInputs2 = document.querySelectorAll('.pin-input2');
+const createPinBtn = document.querySelector('.create_pin_btn');
+const errorCon = document.querySelector('.create_pin_error_con');
+
+// Function to validate if PIN and confirm PIN match
+function validatePinMatch() {
+  let pin = '';
+  let confirmPin = '';
+
+  pinInputs.forEach(input => pin += input.value);
+  pinInputs2.forEach(input => confirmPin += input.value);
+
+  if (pin === confirmPin && pin.length === 6 && confirmPin.length === 6) {
+    errorCon.style.display = 'none'; // Hide error when PINs match
+    createPinBtn.disabled = false;    // Enable the button
+  } else if (confirmPin.length === 6) {
+    errorCon.style.display = 'block'; // Show error only when confirm PIN is filled
+    createPinBtn.disabled = true;     // Disable the button
+  } else {
+    errorCon.style.display = 'none';  // Hide error if confirm PIN is not filled completely
+    createPinBtn.disabled = true;     // Keep the button disabled
+  }
+}
+
+// Function to make the pin visible for 5 seconds
+function makePinVisibleTemporarily(input) {
+  const originalType = input.type;
+  input.type = 'text'; // Make it visible
+  setTimeout(() => {
+    input.type = originalType; // Revert back after 1 second
+  }, 1000);
+}
+
+// Function to move focus to the next input
+function moveToNextInput(currentInput, inputArray) {
+  const currentIndex = Array.from(inputArray).indexOf(currentInput);
+  if (currentInput.value !== '' && currentIndex < inputArray.length - 1) {
+    inputArray[currentIndex + 1].focus(); // Move to the next input
+  }
+}
+
+// Function to move focus to the previous input on backspace
+function moveToPreviousInput(currentInput, inputArray) {
+  const currentIndex = Array.from(inputArray).indexOf(currentInput);
+  if (currentIndex > 0 && currentInput.value === '') {
+    inputArray[currentIndex - 1].focus(); // Move to the previous input
+  }
+}
+
+// Add event listeners to pin inputs
+pinInputs.forEach(input => {
+  input.addEventListener('input', (e) => {
+    if (!/^[0-9]$/.test(e.target.value)) {
+      e.target.value = ''; // Allow only numbers
+    }
+    makePinVisibleTemporarily(input); // Show for 5 seconds
+    moveToNextInput(input, pinInputs); // Move to the next input
+    validatePinMatch();  // Validate pin match on each input
+  });
+
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Backspace') {
+      moveToPreviousInput(input, pinInputs); // Move back on backspace
+    }
+  });
+});
+
+// Add event listeners to confirm pin inputs
+pinInputs2.forEach(input => {
+  input.addEventListener('input', (e) => {
+    if (!/^[0-9]$/.test(e.target.value)) {
+      e.target.value = ''; // Allow only numbers
+    }
+    makePinVisibleTemporarily(input); // Show for 5 seconds
+    moveToNextInput(input, pinInputs2); // Move to next input
+    validatePinMatch(); // Validate pin match after each input
+  });
+
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Backspace') {
+      moveToPreviousInput(input, pinInputs2); // Move back on backspace
+    }
+  });
+});
+
+  </script> -->
+
+
+   
+
+   
+    
+</body>
+</html>

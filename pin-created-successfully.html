@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pin Created Successfully</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/fav-icon.png" type="image/x-icon">
+
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <div class="reset_password_container">
+
+        <!-- mobile login and pattern -->
+        <div class="reset_password_mobile_logo">
+            <div class="reset_password_bo">
+              <img src="assets/images/Paidley-lo.png" alt="reset password mobile logo">
+              <img  class="reset_password_mobile_partern" src="assets/images/arrow-pattern.png" alt="reset password mobile logo">
+            </div>
+        </div>
+
+        <div class="reset_password_left">
+            <div class="reset_password_logo">
+                <img src="assets/images/Paidley-lo.png" alt="paidley logo">
+            </div>
+
+            <div class="reset_password_box">
+                <img src="assets/images/create-pin-illustration.png" alt="create mage">
+            </div>
+
+            <div class="reset_password_footer">
+                <p>&copy; Paidley <span class="year"></span></p>
+                <div class="reset_password_footer_right">
+                    <a href="#">Help Center</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="reset_password_right">
+            <div class="pin_created_container">
+                <div class="pin_created_box">
+                    <div class="top-head">
+                        <h3>Pin created successfully</h3>
+                        <p>Your transfer pin has been created successfully. <br> Proceed to onboarding</p>
+                    </div>
+
+                    <div class="pin_created_mage">
+                        <img src="assets/images/mark-done.png" alt="mark done">
+                    </div>
+
+                    <button type="button">Proceed to dashboard</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- mobile footer section -->
+        <div class="reset_password_mobile_footer footer_320">
+            <div class="reset_password_mobile_footer_box">
+                <p>&copy; Paidley <span class="year"></span></p>
+                <div class="mobile_footer_flex">
+                    <a href="#">Help Center</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <!-- GET YEAR -->
+    <script>
+        let currentYear = new Date().getFullYear();
+        document.querySelectorAll(".year").forEach(function (element) {
+            element.textContent = currentYear;
+        });
+    </script>
+
+
+  
+   
+    
+</body>
+</html>

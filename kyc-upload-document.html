@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know Your Customer</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/fav-icon.png" type="image/x-icon">
+
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+
+</head>
+<body>
+    <div class="kyc_container">
+        <!-- mobile logo and pattern -->
+        <div class="mobile_kyc_logo">
+            <div class="mobile_kyc_box">
+              <img src="assets/images/paidley-lo.png" alt="paidley mobile logo">
+              <!-- <img class="partern" src="assets/images/mobile-bg-pattern.png" alt="partern mage"> -->
+              <img class="partern" src="assets/images/arrow-pattern.png" alt="partern mage">
+            </div>
+        </div>
+
+
+        <div class="kyc_left">
+            <div class="kyc_logo">
+                <img src="assets/images/paidley-lo.png" alt="paidley logo">
+            </div>
+
+            <div class="image_box">
+                <img src="assets/images/kyc-illustration.png" alt=" kyc mage">
+            </div>
+
+            <div class="kyc_footer">
+                <div class="kyc_footer_main1">
+                     <p>&copy; Paidley <span class="year"></span></p>
+                     <div class="kyc_footer_right">
+                         <a href="#">Help Center</a>
+                         <a href="#">Terms of Service</a>
+                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="kyc_right">
+            <div class="upload_container" id="uploadContainer">
+                <div class="top_head">
+                    <h2>Upload Document</h2>
+                    <p>You are almost done, input your KYC below</p>
+                </div>
+
+                <h4>Select mode of verification</h4>
+
+                <div class="country_box">
+                    <label>Country</label>
+                    <!-- All countries -->                    
+                    <div class="country_select_box">
+                        <select autocomplete="country" id="country" name="country">
+                            <option value="AF">Afghanistan</option>
+                            <option value="AX">Åland Islands</option>
+                            <option value="AL">Albania</option>
+                            <option value="DZ">Algeria</option>
+                            <option value="AS">American Samoa</option>
+                            <option value="AD">Andorra</option>
+                            <option value="AO">Angola</option>
+                            <option value="AI">Anguilla</option>
+                            <option value="AQ">Antarctica</option>
+                            <option value="AG">Antigua and Barbuda</option>
+                            <option value="AR">Argentina</option>
+                            <option value="AM">Armenia</option>
+                            <option value="AW">Aruba</option>
+                            <option value="AU">Australia</option>
+                            <option value="AT">Austria</option>
+                            <option value="AZ">Azerbaijan</option>
+                            <option value="BS">Bahamas</option>
+                            <option value="BH">Bahrain</option>
+                            <option value="BD">Bangladesh</option>
+                            <option value="BB">Barbados</option>
+                            <option value="BY">Belarus</option>
+                            <option value="BE">Belgium</option>
+                            <option value="BZ">Belize</option>
+                            <option value="BJ">Benin</option>
+                            <option value="BM">Bermuda</option>
+                            <option value="BT">Bhutan</option>
+                            <option value="BO">Bolivia (Plurinational State of)</option>
+                            <option value="BA">Bosnia and Herzegovina</option>
+                            <option value="BW">Botswana</option>
+                            <option value="BV">Bouvet Island</option>
+                            <option value="BR">Brazil</option>
+                            <option value="IO">British Indian Ocean Territory</option>
+                            <option value="BN">Brunei Darussalam</option>
+                            <option value="BG">Bulgaria</option>
+                            <option value="BF">Burkina Faso</option>
+                            <option value="BI">Burundi</option>
+                            <option value="CV">Cabo Verde</option>
+                            <option value="KH">Cambodia</option>
+                            <option value="CM">Cameroon</option>
+                            <option value="CA">Canada</option>
+                            <option value="BQ">Caribbean Netherlands</option>
+                            <option value="KY">Cayman Islands</option>
+                            <option value="CF">Central African Republic</option>
+                            <option value="TD">Chad</option>
+                            <option value="CL">Chile</option>
+                            <option value="CN">China</option>
+                            <option value="CX">Christmas Island</option>
+                            <option value="CC">Cocos (Keeling) Islands</option>
+                            <option value="CO">Colombia</option>
+                            <option value="KM">Comoros</option>
+                            <option value="CG">Congo</option>
+                            <option value="CD">Congo, Democratic Republic of the</option>
+                            <option value="CK">Cook Islands</option>
+                            <option value="CR">Costa Rica</option>
+                            <option value="HR">Croatia</option>
+                            <option value="CU">Cuba</option>
+                            <option value="CW">Curaçao</option>
+                            <option value="CY">Cyprus</option>
+                            <option value="CZ">Czech Republic</option>
+                            <option value="CI">Côte d'Ivoire</option>
+                            <option value="DK">Denmark</option>
+                            <option value="DJ">Djibouti</option>
+                            <option value="DM">Dominica</option>
+                            <option value="DO">Dominican Republic</option>
+                            <option value="EC">Ecuador</option>
+                            <option value="EG">Egypt</option>
+                            <option value="SV">El Salvador</option>
+                            <option value="GQ">Equatorial Guinea</option>
+                            <option value="ER">Eritrea</option>
+                            <option value="EE">Estonia</option>
+                            <option value="SZ">Eswatini (Swaziland)</option>
+                            <option value="ET">Ethiopia</option>
+                            <option value="FK">Falkland Islands (Malvinas)</option>
+                            <option value="FO">Faroe Islands</option>
+                            <option value="FJ">Fiji</option>
+                            <option value="FI">Finland</option>
+                            <option value="FR">France</option>
+                            <option value="GF">French Guiana</option>
+                            <option value="PF">French Polynesia</option>
+                            <option value="TF">French Southern Territories</option>
+                            <option value="GA">Gabon</option>
+                            <option value="GM">Gambia</option>
+                            <option value="GE">Georgia</option>
+                            <option value="DE">Germany</option>
+                            <option value="GH">Ghana</option>
+                            <option value="GI">Gibraltar</option>
+                            <option value="GR">Greece</option>
+                            <option value="GL">Greenland</option>
+                            <option value="GD">Grenada</option>
+                            <option value="GP">Guadeloupe</option>
+                            <option value="GU">Guam</option>
+                            <option value="GT">Guatemala</option>
+                            <option value="GG">Guernsey</option>
+                            <option value="GN">Guinea</option>
+                            <option value="GW">Guinea-Bissau</option>
+                            <option value="GY">Guyana</option>
+                            <option value="HT">Haiti</option>
+                            <option value="HM">Heard Island and Mcdonald Islands</option>
+                            <option value="HN">Honduras</option>
+                            <option value="HK">Hong Kong</option>
+                            <option value="HU">Hungary</option>
+                            <option value="IS">Iceland</option>
+                            <option value="IN">India</option>
+                            <option value="ID">Indonesia</option>
+                            <option value="IR">Iran</option>
+                            <option value="IQ">Iraq</option>
+                            <option value="IE">Ireland</option>
+                            <option value="IM">Isle of Man</option>
+                            <option value="IL">Israel</option>
+                            <option value="IT">Italy</option>
+                            <option value="JM">Jamaica</option>
+                            <option value="JP">Japan</option>
+                            <option value="JE">Jersey</option>
+                            <option value="JO">Jordan</option>
+                            <option value="KZ">Kazakhstan</option>
+                            <option value="KE">Kenya</option>
+                            <option value="KI">Kiribati</option>
+                            <option value="KP">Korea, North</option>
+                            <option value="KR">Korea, South</option>
+                            <option value="XK">Kosovo</option>
+                            <option value="KW">Kuwait</option>
+                            <option value="KG">Kyrgyzstan</option>
+                            <option value="LA">Lao People's Democratic Republic</option>
+                            <option value="LV">Latvia</option>
+                            <option value="LB">Lebanon</option>
+                            <option value="LS">Lesotho</option>
+                            <option value="LR">Liberia</option>
+                            <option value="LY">Libya</option>
+                            <option value="LI">Liechtenstein</option>
+                            <option value="LT">Lithuania</option>
+                            <option value="LU">Luxembourg</option>
+                            <option value="MO">Macao</option>
+                            <option value="MK">Macedonia North</option>
+                            <option value="MG">Madagascar</option>
+                            <option value="MW">Malawi</option>
+                            <option value="MY">Malaysia</option>
+                            <option value="MV">Maldives</option>
+                            <option value="ML">Mali</option>
+                            <option value="MT">Malta</option>
+                            <option value="MH">Marshall Islands</option>
+                            <option value="MQ">Martinique</option>
+                            <option value="MR">Mauritania</option>
+                            <option value="MU">Mauritius</option>
+                            <option value="YT">Mayotte</option>
+                            <option value="MX">Mexico</option>
+                            <option value="FM">Micronesia</option>
+                            <option value="MD">Moldova</option>
+                            <option value="MC">Monaco</option>
+                            <option value="MN">Mongolia</option>
+                            <option value="ME">Montenegro</option>
+                            <option value="MS">Montserrat</option>
+                            <option value="MA">Morocco</option>
+                            <option value="MZ">Mozambique</option>
+                            <option value="MM">Myanmar (Burma)</option>
+                            <option value="NA">Namibia</option>
+                            <option value="NR">Nauru</option>
+                            <option value="NP">Nepal</option>
+                            <option value="NL">Netherlands</option>
+                            <option value="AN">Netherlands Antilles</option>
+                            <option value="NC">New Caledonia</option>
+                            <option value="NZ">New Zealand</option>
+                            <option value="NI">Nicaragua</option>
+                            <option value="NE">Niger</option>
+                            <option value="NG">Nigeria</option>
+                            <option value="NU">Niue</option>
+                            <option value="NF">Norfolk Island</option>
+                            <option value="MP">Northern Mariana Islands</option>
+                            <option value="NO">Norway</option>
+                            <option value="OM">Oman</option>
+                            <option value="PK">Pakistan</option>
+                            <option value="PW">Palau</option>
+                            <option value="PS">Palestine</option>
+                            <option value="PA">Panama</option>
+                            <option value="PG">Papua New Guinea</option>
+                            <option value="PY">Paraguay</option>
+                            <option value="PE">Peru</option>
+                            <option value="PH">Philippines</option>
+                            <option value="PN">Pitcairn Islands</option>
+                            <option value="PL">Poland</option>
+                            <option value="PT">Portugal</option>
+                            <option value="PR">Puerto Rico</option>
+                            <option value="QA">Qatar</option>
+                            <option value="RE">Reunion</option>
+                            <option value="RO">Romania</option>
+                            <option value="RU">Russian Federation</option>
+                            <option value="RW">Rwanda</option>
+                            <option value="BL">Saint Barthelemy</option>
+                            <option value="SH">Saint Helena</option>
+                            <option value="KN">Saint Kitts and Nevis</option>
+                            <option value="LC">Saint Lucia</option>
+                            <option value="MF">Saint Martin</option>
+                            <option value="PM">Saint Pierre and Miquelon</option>
+                            <option value="VC">Saint Vincent and the Grenadines</option>
+                            <option value="WS">Samoa</option>
+                            <option value="SM">San Marino</option>
+                            <option value="ST">Sao Tome and Principe</option>
+                            <option value="SA">Saudi Arabia</option>
+                            <option value="SN">Senegal</option>
+                            <option value="RS">Serbia</option>
+                            <option value="CS">Serbia and Montenegro</option>
+                            <option value="SC">Seychelles</option>
+                            <option value="SL">Sierra Leone</option>
+                            <option value="SG">Singapore</option>
+                            <option value="SX">Sint Maarten</option>
+                            <option value="SK">Slovakia</option>
+                            <option value="SI">Slovenia</option>
+                            <option value="SB">Solomon Islands</option>
+                            <option value="SO">Somalia</option>
+                            <option value="ZA">South Africa</option>
+                            <option value="GS">South Georgia and the South Sandwich Islands</option>
+                            <option value="SS">South Sudan</option>
+                            <option value="ES">Spain</option>
+                            <option value="LK">Sri Lanka</option>
+                            <option value="SD">Sudan</option>
+                            <option value="SR">Suriname</option>
+                            <option value="SJ">Svalbard and Jan Mayen</option>
+                            <option value="SE">Sweden</option>
+                            <option value="CH">Switzerland</option>
+                            <option value="SY">Syria</option>
+                            <option value="TW">Taiwan</option>
+                            <option value="TJ">Tajikistan</option>
+                            <option value="TZ">Tanzania</option>
+                            <option value="TH">Thailand</option>
+                            <option value="TL">Timor-Leste</option>
+                            <option value="TG">Togo</option>
+                            <option value="TK">Tokelau</option>
+                            <option value="TO">Tonga</option>
+                            <option value="TT">Trinidad and Tobago</option>
+                            <option value="TN">Tunisia</option>
+                            <option value="TR">Turkey (Türkiye)</option>
+                            <option value="TM">Turkmenistan</option>
+                            <option value="TC">Turks and Caicos Islands</option>
+                            <option value="TV">Tuvalu</option>
+                            <option value="UM">U.S. Outlying Islands</option>
+                            <option value="UG">Uganda</option>
+                            <option value="UA">Ukraine</option>
+                            <option value="AE">United Arab Emirates</option>
+                            <option value="GB">United Kingdom</option>
+                            <option value="US">United States</option>
+                            <option value="UY">Uruguay</option>
+                            <option value="UZ">Uzbekistan</option>
+                            <option value="VU">Vanuatu</option>
+                            <option value="VA">Vatican City Holy See</option>
+                            <option value="VE">Venezuela</option>
+                            <option value="VN">Vietnam</option>
+                            <option value="VG">Virgin Islands, British</option>
+                            <option value="VI">Virgin Islands, U.S</option>
+                            <option value="WF">Wallis and Futuna</option>
+                            <option value="EH">Western Sahara</option>
+                            <option value="YE">Yemen</option>
+                            <option value="ZM">Zambia</option>
+                            <option value="ZW">Zimbabwe</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="radio_group">
+                    <label>
+                      <input type="radio" name="id_type" value="student_id_card">
+                      Student ID Card
+                    </label>
+
+                    <label>
+                      <input type="radio" name="id_type" value="passport">
+                      International Passport
+                    </label>
+
+                    <label>
+                      <input type="radio" name="id_type" value="drivers_license">
+                      Driver's License
+                    </label>
+
+                    <label>
+                      <input type="radio" name="id_type" value="voters_card">
+                      Voter's Card
+                    </label>
+
+                    <label>
+                      <input type="radio" name="id_type" value="nin_slip">
+                      Digital NIN Slip
+                    </label>
+
+                    <label>
+                      <input type="radio" name="id_type" value="nin_id_card">
+                      NIN ID Card
+                    </label>
+
+                    <label>
+                      <input type="radio" name="id_type" value="nimc_slip">
+                      NIMC Slip
+                    </label>
+
+                </div>
+
+                <div class="upload_btn_box">
+                    <button id="proceedBtn" type="button">Proceed</button> 
+                </div>
+            </div>
+          
+            <div class="front_id_container" id="frontIdContainer">
+                <div class="front_id_main" id="frontIdMain">
+                    <div class="top_head">
+                        <h2>Upload Document</h2>
+                        <p>You are almost done, input your KYC below</p>
+                    </div>
+
+                    <div class="file_input_content">
+                        <div class="title_location">
+                            <p class="title">Student ID Card</p>
+                            <span class="location">Nigeria</span>
+                        </div>
+                       
+
+                        <div class="img-container">
+                          <!-- <img id="id-preview" src="assets/images/file-scan.png" alt="ID Placeholder"> -->
+                          <img id="id-preview" src="assets/images/front-id.png" alt="ID Placeholder">
+                        </div>
+
+                        <p class="label">Front Side</p>
+                    </div>
+
+                    <div class="file_box">
+                        <input type="file" id="file-input" accept="image/*" style="display:none;" onchange="previewImage(event)">
+                        <button class="attach_btn" id="attach-btn">Attach File</button>
+                        <button id="proceedBtn2" class="proceed_btn">Proceed</button>
+                    </div>
+                </div>
+
+                <!-- UPLOAD BACK ID -->
+                <div class="front_id_main black-id" id="backId">
+                    <div class="top_head">
+                        <h2>Upload Document</h2>
+                        <p>You are almost done, input your KYC below</p>
+                    </div>
+
+                    <div class="file_input_content">
+                        <div class="title_location">
+                            <p class="title">Student ID Card</p>
+                            <span class="location">Nigeria</span>
+                        </div>
+                       
+
+                        <div class="img-container">
+                          <!-- <img id="back-preview" src="assets/images/file-scan.png" alt=" back Id Placeholder"> -->
+                          <img id="back-preview" src="assets/images/back-id.png" alt=" back Id Placeholder">
+                        </div>
+
+                        <p class="label">Back Side</p>
+                    </div>
+
+                    <div class="file_box">
+                        <input type="file" id="backFile" accept="image/*" style="display:none;">
+                        <label class="attach_btn" for="backFile" id="attachBack">Attach File</label>
+                        <!-- <button class="attach_btn" id="attachBack">Attach File</button> -->
+                        <button class="sub_btn">Submit</button>
+                    </div>
+                </div>
+
+
+                <!-- ID UPLOAD SUCCESSFULLY -->
+                <!-- <div class="id_upload_successfully_container">
+                    <div class="id_upload_successfully_main">
+                        <div class="top_head">
+                            <h4>You are all set up</h4>
+                        </div>
+
+                        <div class="id_upload_successfully_contents">
+                            <p>Your registration is now complete and <br> your verification is being reviewed.</p>
+
+                            <div class="id_mage_box">
+                                <img src="assets/images/mark-done.png" alt="">
+                            </div>
+
+                            <a href="./client-dashboard/index.html" class="id_upload_btn">Proceed to your Dashboard</a>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+       
+        </div>
+
+        <!-- mobile footer section -->
+        <div class="mobile_kyc_footer">
+            <div class="footer_box">
+                <p>&copy; Paidley <span class="year"></span></p>
+                <div class="mobile_footer_right">
+                    <a href="#">Help Center</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GET YEAR -->
+    <script>
+        let currentYear = new Date().getFullYear();
+        document.querySelectorAll(".year").forEach(function (element) {
+            element.textContent = currentYear;
+        });
+    </script>
+
+    <!-- FRONT ID FILE UPLOAD -->
+    <script>
+        let attachBtn = document.getElementById("attach-btn");
+        let fileInput = document.getElementById("file-input");
+        let idPreview = document.getElementById("id-preview");
+
+        // Attach click event to the button to trigger file input
+        attachBtn.addEventListener("click", function () {
+        fileInput.click();
+        });
+
+        // Function to preview the uploaded image
+        function previewImage(event) {
+        let input = event.target;
+        let reader = new FileReader();
+
+        // Once the file is loaded, set the preview image source
+        reader.onload = function () {
+            idPreview.src = reader.result;
+        };
+
+        // If the file input has a file, read the file and display it
+        if (input.files && input.files[0]) {
+            reader.readAsDataURL(input.files[0]);
+        }
+        }
+
+    </script>
+
+    <!-- <script>
+        // Get the elements needed
+const proceedBtn2 = document.getElementById("proceedBtn2");
+const frontIdMain = document.getElementById("frontIdMain");
+const backId = document.getElementById("backId");
+const attachBack = document.getElementById("attachBack");
+const backFileInput = document.getElementById("backFile");
+const backPreview = document.getElementById("back-preview");
+
+// Function to show back ID section
+function showBackIdSection() {
+    frontIdMain.style.display = "none";
+    backId.style.display = "block";
+}
+
+// Function to handle back ID upload preview
+function handleBackIdUpload(event) {
+    const file = event.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            backPreview.src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+    }
+}
+
+// Add event listener for proceed button to switch views
+proceedBtn2.addEventListener("click", showBackIdSection);
+
+// Add event listener for back file upload
+backFileInput.addEventListener("change", handleBackIdUpload);
+
+    </script> -->
+
+    <!-- GET THE ID SELECTED AND THEN OPEN THE FRONT ID UPLOAD CONTAINER -->
+    <!-- <script>
+        let proceedBtn = document.getElementById("proceedBtn");
+
+        proceedBtn.addEventListener("click", function() {
+            let countryElement = document.getElementById("country");
+            let selectedCountry = countryElement.value;
+            let selectedRadio = document.querySelector('input[name="id_type"]:checked');
+            let uploadContainer = document.getElementById("uploadContainer");
+            let frontIdContainer = document.getElementById("frontIdContainer");
+            let titleElement = document.querySelector(".title");
+            let locationElement = document.querySelector(".location");
+
+            // Check if both a country and a radio option are selected
+            if (selectedCountry !== "select" && selectedRadio) {
+                let countryName = countryElement.options[countryElement.selectedIndex].text;
+                let radioLabel = selectedRadio.parentElement.textContent.trim();
+
+                // Close upload container and show front ID container
+                uploadContainer.style.display = "none";
+                frontIdContainer.style.display = "block";
+
+                // Update the title and location
+                titleElement.textContent = radioLabel;
+                locationElement.textContent = countryName;
+            }
+        });
+
+    </script> -->
+
+    <script>
+        // Front ID section proceed button
+        let proceedBtn = document.getElementById("proceedBtn");
+    
+        // Event listener to proceed from the initial selection to the front ID container
+        proceedBtn.addEventListener("click", function() {
+            let countryElement = document.getElementById("country");
+            let selectedCountry = countryElement.value;
+            let selectedRadio = document.querySelector('input[name="id_type"]:checked');
+            let uploadContainer = document.getElementById("uploadContainer");
+            let frontIdContainer = document.getElementById("frontIdContainer");
+            let titleElement = document.querySelector("#frontIdMain .title"); // Front ID title
+            let locationElement = document.querySelector("#frontIdMain .location"); // Front ID location
+    
+            // Check if both a country and a radio option are selected
+            if (selectedCountry !== "select" && selectedRadio) {
+                let countryName = countryElement.options[countryElement.selectedIndex].text;
+                let radioLabel = selectedRadio.parentElement.textContent.trim();
+    
+                // Close upload container and show front ID container
+                uploadContainer.style.display = "none";
+                frontIdContainer.style.display = "block";
+    
+                // Update the title and location in the front ID section
+                titleElement.textContent = radioLabel;
+                locationElement.textContent = countryName;
+            }
+        });
+    
+        // Back ID section proceed button (Proceed from front ID to back ID)
+        const proceedBtn2 = document.getElementById("proceedBtn2");
+        const frontIdMain = document.getElementById("frontIdMain");
+        const backId = document.getElementById("backId");
+        const backTitleElement = document.querySelector("#backId .title"); // Back ID title
+        const backLocationElement = document.querySelector("#backId .location"); // Back ID location
+    
+        // Function to show back ID section and copy data from front ID
+        function showBackIdSection() {
+            // Copy the title and location from front ID section to back ID section
+            let frontTitle = document.querySelector("#frontIdMain .title").textContent;
+            let frontLocation = document.querySelector("#frontIdMain .location").textContent;
+            
+            backTitleElement.textContent = frontTitle; // Set back ID title
+            backLocationElement.textContent = frontLocation; // Set back ID location
+            
+            // Hide the front ID section and show the back ID section
+            frontIdMain.style.display = "none";
+            backId.style.display = "block";
+        }
+    
+        // Add event listener for the Proceed button on the front ID section
+        proceedBtn2.addEventListener("click", showBackIdSection);
+    
+        // Back ID file upload handler (optional, already in your code)
+        const backFileInput = document.getElementById("backFile");
+        const backPreview = document.getElementById("back-preview");
+        
+        function handleBackIdUpload(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    backPreview.src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+    
+        backFileInput.addEventListener("change", handleBackIdUpload);
+    </script>
+    
+
+    
+</body>
+</html>

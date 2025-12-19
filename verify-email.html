@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Email</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/fav-icon.png" type="image/x-icon">
+
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <div class="reset_password_container">
+
+        <!-- mobile login and pattern -->
+        <div class="reset_password_mobile_logo">
+            <div class="reset_password_bo">
+              <img src="assets/images/Paidley-lo.png" alt="reset password mobile logo">
+              <img  class="reset_password_mobile_partern" src="assets/images/arrow-pattern.png" alt="reset password mobile logo">
+            </div>
+        </div>
+
+        <div class="reset_password_left">
+            <div class="reset_password_logo">
+                <img src="assets/images/Paidley-lo.png" alt="paidley logo">
+            </div>
+
+            <div class="reset_password_box">
+                <img src="assets/images/verify-illustration.png" alt="login mage">
+            </div>
+
+            <!-- <div class="reset_password_footer">
+                <p>&copy; Paidley <span class="year"></span></p>
+                <div class="reset_password_footer_right">
+                    <a href="#">Help Center</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div> -->
+
+            <div class="kyc_footer">
+                <div class="kyc_footer_main1">
+                    <p>&copy; Paidley <span  class="year"></span></p>
+                    <div class="kyc_footer_right">
+                        <a href="#">Help Center</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="reset_password_right">
+            <div class="reset_password_main" id="">
+                <div class="otp-container">
+                    <div class="top-head">
+                        <h3>Verify your Email</h3>
+                        <p>Please enter the OTP sent to the email address you provided</p>
+                    </div>
+
+                    <form action="">
+                        <div class="otp-inputs">
+                            <input type="text" maxlength="1" class="otp" id="otp1">
+                            <input type="text" maxlength="1" class="otp" id="otp2">
+                            <input type="text" maxlength="1" class="otp" id="otp3">
+                            <input type="text" maxlength="1" class="otp" id="otp4">
+                            <input type="text" maxlength="1" class="otp" id="otp5">
+                            <input type="text" maxlength="1" class="otp" id="otp6">
+                        </div>
+                      
+                        <div class="opt_not_send">
+                            <p>Didn`t recieve OTP? <a href="#">Resend code</a></p>
+                        </div>
+
+                        <button class="verify_btn" id="verifyBtn" type="submit" disabled>Verify email</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- mobile footer section -->
+        <div class="reset_password_mobile_footer">
+            <div class="reset_password_mobile_footer_box">
+                <p>&copy; Paidley <span class="year"></span></p>
+                <div class="mobile_footer_flex">
+                    <a href="#">Help Center</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- GET YEAR -->
+    <script>
+        let currentYear = new Date().getFullYear();
+        document.querySelectorAll(".year").forEach(function (element) {
+            element.textContent = currentYear;
+        });
+    </script>
+
+    <!-- GET THE OTP INPUTS -->
+    <script>
+        const otpInputs = document.querySelectorAll('.otp');
+        const verifyButton = document.getElementById('verifyBtn');
+
+        // Restrict input to numbers only and handle navigation
+        otpInputs.forEach((input, index) => {
+            input.addEventListener('keydown', (e) => {
+                const isNumber = e.key >= '0' && e.key <= '9';
+                const isBackspace = e.key === 'Backspace';
+
+                // Allow only numbers, backspace, and prevent other inputs
+                if (!isNumber && !isBackspace) {
+                e.preventDefault();
+                }
+
+                if (isBackspace && input.value === '' && index > 0) {
+                otpInputs[index - 1].focus();
+                }
+            });
+
+            // Handle input event for auto move to next and enable button when filled
+            input.addEventListener('input', (e) => {
+                if (e.target.value.length === 1 && index < otpInputs.length - 1) {
+                    otpInputs[index + 1].focus();
+                }
+
+                // Check if all fields are filled
+                const allFilled = [...otpInputs].every(input => input.value !== '');
+                verifyButton.disabled = !allFilled;
+            });
+        });
+
+    </script>
+        
+    
+</body>
+</html>
