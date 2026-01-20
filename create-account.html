@@ -5,268 +5,207 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Account</title>
 
-    <!-- favicon -->
     <link rel="shortcut icon" href="assets/images/fav-icon.png" type="image/x-icon">
-
-    <!-- css stylesheet -->
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <!-- CSS LIBRARY FOR THE COUNTRY FLAG -->
+    <!-- country flag css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
 
+    <!-- spinner style -->
+    <style>
+        .btn-spinner {
+            width: 18px;
+            height: 18px;
+            border: 2px solid #1d4ed8;
+            border-top: 2px solid transparent;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            display: inline-block;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
 </head>
 <body>
-    <div class="kyc_container">
-        <!-- mobile logo and pattern -->
-        <div class="mobile_kyc_logo">
-            <div class="mobile_kyc_box">
-              <img src="assets/images/Paidley-lo.png" alt="paidley mobile logo">
-              <img class="partern" src="assets/images/arrow-pattern.png" alt="partern mage">
-            </div>
+
+<div class="kyc_container">
+
+    <!-- mobile header -->
+    <div class="mobile_kyc_logo">
+        <div class="mobile_kyc_box">
+            <img src="assets/images/Paidley-lo.png" alt="paidley mobile logo">
+            <img class="partern" src="assets/images/arrow-pattern.png" alt="">
         </div>
-
-
-        <div class="kyc_left">
-            <div class="kyc_logo">
-                <img src="assets/images/Paidley-lo.png" alt="paidley logo">
-            </div>
-
-            <div class="create-image_illustration">
-                <img src="assets/images/create-illustration.png" alt=" create illustration mage">
-            </div>
-
-            <!-- <div class="create_account_footer">
-                <p>&copy; Paidley <span  class="year"></span></p>
-                <div class="create_account_footer_right">
-                    <a href="#">Help Center</a>
-                    <a href="#">Terms of Service</a>
-                </div>
-            </div> -->
-
-            <div class="kyc_footer">
-                <!-- <p>&copy; Paidley <span  class="year"></span></p> -->
-                <div class="kyc_footer_main1">
-                    <p>&copy; Paidley <span  class="year"></span></p>
-                    <div class="kyc_footer_right">
-                        <a href="#">Help Center</a>
-                        <a href="#">Terms of Service</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="kyc_right">
-            <div class="create_account-container">
-                <div class="create_account_main">
-                    <div class="top_head">
-                        <h2>Create your account</h2>
-                        <p>Already have an account? <a href="login.html">Sign in</a></p>
-                    </div>
-
-                    <form action="">
-                        <div class="create_account_group1_box">
-                            <div class="form-group">
-                                <label for="first-name">First name <span>*</span></label>
-                                <input type="text" id="firstName" placeholder="Enter first name" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="last-name">Last name <span>*</span></label>
-                                <input type="text" id="lastName" placeholder="Enter last name" required>
-                            </div>
-
-                        </div>
-
-                        <div class="create_account_group_bo">
-                            <div class="form-group">
-                                <label for="middle-name">Middle name</label>
-                                <input type="text" id="middle-name" placeholder="Enter middle name" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="dob">Date of birth  <span>*</span></label>
-                                <input type="date" id="dob" required>
-                            </div>
-
-                            <!-- <div class="phone-number-box">
-                                <label for="phone-number">Phone number <span>*</span></label>
-                                <div class="phone-input">
-                                    <input class="phone_numb" type="tel" id="phoneNumber" placeholder="8123456789" required>
-                                </div>
-                            </div> -->
-                        </div>
-
-                        <div class="create_account_group2_box">
-                            <div class="phone-number-box">
-                                <label for="phone-number">Phone number <span>*</span></label>
-                                <div class="phone-input">
-                                    <input class="phone_numb" type="tel" id="phoneNumber" placeholder="8123456789" required>
-                                </div>
-                            </div>
-
-                            <div class="form-group2">
-                                <label for="email">Email <span>*</span></label>
-                                <input type="email" id="email" placeholder="Johndoe@email.com" required>
-                            </div>
-
-                            <div class="form-group-image">
-                                <label for="password">Password <span>*</span></label>
-                                <div class="form-group-image_flex">
-                                    <input type="password" id="password" placeholder="Enter strong password" required>
-                                    <img class="create_show" id="createShow" src="assets/images/show-eye.png" alt="show eye">
-                                    <img class="create_hide" id="createHide" src="assets/images/hide-eye.png" alt="hide eye">
-                                </div>
-                            </div>
-
-                            <div class="form-group-image">
-                                <label for="confirm-password">Confirm password <span>*</span></label>
-                                <div class="form-group-image_flex">
-                                    <input type="password" id="confirm-password" placeholder="Re-enter password" required>
-                                    <img class="create_show2" id="createShow2" src="assets/images/show-eye.png" alt="show eye 2">
-                                    <img class="create_hide2" id="createHide2" src="assets/images/hide-eye.png" alt="hide eye 2">
-                                </div>
-
-                                <div class="password_match">
-                                    <div class="match_flex">
-                                        <img src="assets/svg/error-icon.svg" alt="">
-                                        <p>Password does not match</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <p class="password_instruction">Passwords must be 8-128 characters long, containing at least one uppercase letter, one lowercase letter, and one special character.</p>
-
-                            <div class="form-group2">
-                                <label for="referral-code">Referral code (optional)</label>
-                                <input type="text" id="referral-code" placeholder="#1234567">
-                            </div>
-                        </div>
-
-                        <button class="create_account_btn" type="submit" disabled>Create account</button>
-                    </form>
-                </div>
-               
-            </div>
-        </div>
-
-        <!-- mobile footer section -->
-        <div class="mobile_kyc_footer">
-            <div class="footer_box">
-                <p>&copy; Paidley <span class="year"></span></p>
-                <div class="mobile_footer_right">
-                    <a href="#">Help Center</a>
-                    <a href="#">Terms of Service</a>
-                </div>
-            </div>
-        </div>
-
     </div>
 
-    <!-- LIBRARY FOR THE COUNTRY FLAG Include intl-tel-input JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <div class="kyc_left">
+        <div class="kyc_logo">
+            <img src="assets/images/Paidley-lo.png" alt="paidley logo">
+        </div>
 
+        <div class="create-image_illustration">
+            <img src="assets/images/create-illustration.png" alt="">
+        </div>
 
-    <!-- JS CODE FOR THE COUNTRY FLAG -->
-    <script>
-        const input = document.querySelector(".phone_numb");
-    
-        // Initialize the plugin with Nigeria as default and country code beside flag
-        window.intlTelInput(input, {
-            initialCountry: "ng",
-            separateDialCode: true,
-            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
-        });
-    </script>
+        <div class="kyc_footer">
+            <div class="kyc_footer_main1">
+                <p>&copy; Paidley <span class="year"></span></p>
+                <div class="kyc_footer_right">
+                    <a href="#">Help Center</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="kyc_right">
+        <div class="create_account-container">
+            <div class="create_account_main">
 
-    <!-- GET YEAR -->
-    <script>
-        let currentYear = new Date().getFullYear();
-        document.querySelectorAll(".year").forEach(function (element) {
-            element.textContent = currentYear;
-        });
-    </script>
+                <div class="top_head">
+                    <h2>Create your account</h2>
+                    <p>Already have an account? <a href="login.html">Sign in</a></p>
+                </div>
 
+                <form id="createAccountForm">
 
-    <!-- PASSWORD HIDE AND SHOW, ALSO BUTTON ENABLE -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-        const firstName = document.getElementById("firstName");
-        const lastName = document.getElementById("lastName");
-        const phoneNumber = document.getElementById("phoneNumber");
-        const dob = document.getElementById("dob");
-        const email = document.getElementById("email");
-        const password = document.getElementById("password");
-        const confirmPassword = document.getElementById("confirm-password");
-        const createButton = document.querySelector(".create_account_btn");
-        const passwordMatchError = document.querySelector(".password_match");
-        const showIcon1 = document.getElementById("createShow");
-        const hideIcon1 = document.getElementById("createHide");
-        const showIcon2 = document.getElementById("createShow2");
-        const hideIcon2 = document.getElementById("createHide2");
-    
-        // Function to enable the button
-        function enableCreateButton() {
-            if (
-            firstName.value.trim() &&
-            lastName.value.trim() &&
-            phoneNumber.value.trim() &&
-            dob.value.trim() &&
-            email.value.trim() &&
-            password.value.trim() &&
-            confirmPassword.value.trim() &&
-            password.value === confirmPassword.value
-            ) {
-            createButton.disabled = false;
-            } else {
-            createButton.disabled = true;
-            }
-        }
-    
-        // Ensure phone number input allows only numbers
-        phoneNumber.addEventListener("input", function () {
-            phoneNumber.value = phoneNumber.value.replace(/\D/g, "");
-        });
-    
-        // Check password match
-        function checkPasswordMatch() {
-            if (password.value !== confirmPassword.value && confirmPassword.value !== "") {
-            passwordMatchError.style.display = "block";
-            } else {
-            passwordMatchError.style.display = "none";
-            }
-            enableCreateButton();
-        }
-    
-        // Toggle password visibility for password and confirm-password fields
-        function togglePasswordVisibility(showIcon, hideIcon, field) {
-            showIcon.addEventListener("click", function () {
-            field.type = "text";
-            showIcon.style.display = "none";
-            hideIcon.style.display = "inline-block";
-            });
-    
-            hideIcon.addEventListener("click", function () {
-            field.type = "password";
-            hideIcon.style.display = "none";
-            showIcon.style.display = "inline-block";
-            });
-        }
-    
-        // Event listeners to validate and check input fields
-        [firstName, lastName, phoneNumber, dob, email, password, confirmPassword].forEach((input) => {
-            input.addEventListener("input", function () {
-            checkPasswordMatch();
-            });
-        });
-    
-        // Initialize the password visibility toggles
-        togglePasswordVisibility(showIcon1, hideIcon1, password); // Main password field
-        togglePasswordVisibility(showIcon2, hideIcon2, confirmPassword); // Confirm password field
-        });
-    </script> 
-   
-    
+                    <div class="create_account_group1_box">
+                        <div class="form-group">
+                            <label>First name <span>*</span></label>
+                            <input type="text" id="firstName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Last name <span>*</span></label>
+                            <input type="text" id="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="create_account_group_bo">
+                        <div class="form-group">
+                            <label>Middle name</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Date of birth <span>*</span></label>
+                            <input type="date" id="dob" required>
+                        </div>
+                    </div>
+
+                    <div class="create_account_group2_box">
+                        <div class="phone-number-box">
+                            <label>Phone number <span>*</span></label>
+                            <div class="phone-input">
+                                <input class="phone_numb" type="tel" id="phoneNumber" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group2">
+                            <label>Email <span>*</span></label>
+                            <input type="email" id="email" required>
+                        </div>
+
+                        <div class="form-group-image">
+                            <label>Password <span>*</span></label>
+                            <div class="form-group-image_flex">
+                                <input type="password" id="password" required>
+                                <img id="createShow" src="assets/images/show-eye.png" alt="">
+                                <img id="createHide" src="assets/images/hide-eye.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="form-group-image">
+                            <label>Confirm password <span>*</span></label>
+                            <div class="form-group-image_flex">
+                                <input type="password" id="confirmPassword" required>
+                                <img id="createShow2" src="assets/images/show-eye.png" alt="">
+                                <img id="createHide2" src="assets/images/hide-eye.png" alt="">
+                            </div>
+
+                            <div class="password_match" style="display:none;">
+                                <p>Password does not match</p>
+                            </div>
+                        </div>
+
+                        <div class="form-group2">
+                            <label>Referral code (optional)</label>
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <button class="create_account_btn" type="submit" disabled>
+                        Create account
+                    </button>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- intl tel input -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+<script>
+    const phoneInput = document.querySelector(".phone_numb");
+    window.intlTelInput(phoneInput, {
+        initialCountry: "ng",
+        separateDialCode: true,
+    });
+</script>
+
+<script>
+    document.querySelectorAll(".year").forEach(el => {
+        el.textContent = new Date().getFullYear();
+    });
+</script>
+
+<script>
+    const form = document.getElementById("createAccountForm");
+    const btn = document.querySelector(".create_account_btn");
+
+    const fields = [
+        "firstName",
+        "lastName",
+        "phoneNumber",
+        "dob",
+        "email",
+        "password",
+        "confirmPassword"
+    ].map(id => document.getElementById(id));
+
+    const password = document.getElementById("password");
+    const confirmPassword = document.getElementById("confirmPassword");
+    const error = document.querySelector(".password_match");
+
+    function validate() {
+        const filled = fields.every(f => f.value.trim() !== "");
+        const match = password.value === confirmPassword.value;
+
+        error.style.display = !match && confirmPassword.value ? "block" : "none";
+        btn.disabled = !(filled && match);
+    }
+
+    fields.forEach(f => f.addEventListener("input", validate));
+
+    form.addEventListener("submit", e => {
+        e.preventDefault();
+
+        btn.disabled = true;
+        btn.innerHTML = `<span class="btn-spinner"></span>Creating account...`;
+
+        setTimeout(() => {
+            window.location.href = "login.html";
+        }, 1500);
+    });
+</script>
+
 </body>
 </html>
