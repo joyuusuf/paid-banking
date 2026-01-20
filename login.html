@@ -10,96 +10,51 @@
 
     <!-- css stylesheet -->
     <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- spinner style -->
+    <style>
+        .btn-spinner {
+            width: 18px;
+            height: 18px;
+            border: 2px solid #1d4ed8;
+            border-top: 2px solid transparent;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
 </head>
 <body>
-    <div class="login_container">
-        <!-- mobile login and pattern -->
-        <div class="mobile_login_logo">
-            <div class="mobile_login_box">
-              <img src="assets/images/Paidley-lo.png" alt="login mobile logo">
-              <!-- <img class="mobile_login_partern" src="assets/images/mobile-bg-pattern.png" alt="mobile login pattern"> -->
-              <img class="mobile_login_partern" src="assets/images/arrow-pattern.png" alt="mobile login pattern">
-            </div>
+
+<div class="login_container">
+
+    <!-- mobile login -->
+    <div class="mobile_login_logo">
+        <div class="mobile_login_box">
+            <img src="assets/images/Paidley-lo.png" alt="login mobile logo">
+            <img class="mobile_login_partern" src="assets/images/arrow-pattern.png" alt="mobile login pattern">
+        </div>
+    </div>
+
+    <div class="login_left">
+        <div class="login_logo">
+            <img src="assets/images/Paidley-lo.png" alt="paidley logo">
         </div>
 
-        <div class="login_left">
-            <div class="login_logo">
-                <img src="assets/images/Paidley-lo.png" alt="paidley logo">
-            </div>
+        <div class="login_box">
+            <img src="assets/images/login-illustration.png" alt="login illustration">
+        </div>
 
-            <div class="login_box">
-                <img src="assets/images/login-illustration.png" alt=" login illustration mage">
-            </div>
-
-            <!-- <div class="login_footer">
+        <div class="login_footer">
+            <div class="login_footer_right">
                 <p>&copy; Paidley <span class="year"></span></p>
-                <div class="login_footer_right">
-                    <a href="#">Help Center</a>
-                    <a href="#">Terms of Service</a>
-                </div>
-            </div> -->
-            <div class="login_footer">
-                <div class="login_footer_right">
-                    <p>&copy; Paidley <span class="year"></span></p>
-                    <div class="box">
-                        <a href="#">Help Center</a>
-                        <a href="#">Terms of Service</a>
-                   </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="login_right">
-            <div class="login_main">
-                <div class="login_right_box">
-                    <div class="top-head">
-                        <h3>Log in</h3>
-                        <p> Log in to take control of your finances today.</p>
-                    </div>
-
-                    <form action="" id="loginForm">
-                        <div class="login_email">
-                            <label>Email</label> 
-                            <input type="text" id="email" placeholder="Enter your email address" required>  
-                            <p class="error-message" id="emailError"></p>
-                        </div>
-
-                        <div class="login_password_box">
-                            <label>Password</label>
-                            <div class="password_flex">
-                                <input type="password"  id="password" placeholder="Enter your password" required>
-                                <img class="show" id="show" src="assets/images/show-eye.png" alt="show eye">
-                                <img class="hide" id="hide" src="assets/images/hide-eye.png" alt="hide eye">
-                            </div>
-
-                            <div class="error_box">
-                                <div class="error_content">
-                                    <img src="assets/svg/error-icon.svg" alt="error icon">
-                                    <p id="passwordError">Field required</p>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="login_flex">
-                            <button class="login_btn" type="submit" disabled>Login</button>
-                            <p>Forgot password? <a href="reset-password.html">Reset here</a></p>
-                        </div>
-                    </form>
-
-                    <div class="login_bottom">
-                        <p>Don’t have an account? <a href="create-account.html">Create account</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- mobile footer section -->
-        <div class="mobile_login_footer">
-            <div class="mobile_login_footer_box">
-                <p>&copy; Paidley <span class="year"></span></p>
-                <div class="mobile_login_footer_right">
+                <div class="box">
                     <a href="#">Help Center</a>
                     <a href="#">Terms of Service</a>
                 </div>
@@ -107,56 +62,109 @@
         </div>
     </div>
 
-    <!-- GET ALL YEAR  -->
-    <script>
-        let currentYear = new Date().getFullYear();
-            document.querySelectorAll(".year").forEach(function (element) {
-                element.textContent = currentYear;
-        });
-    </script>
-    
+    <div class="login_right">
+        <div class="login_main">
+            <div class="login_right_box">
 
-    <!-- PASSWORD HIDE AND SHOW, ALSO BUTTON ENABLE -->
-    <script>
-        const passwordField = document.getElementById("password");
-        const emailField = document.getElementById("email");
-        const loginButton = document.querySelector(".login_btn");
-        const showIcon = document.getElementById("show");
-        const hideIcon = document.getElementById("hide");
+                <div class="top-head">
+                    <h3>Log in</h3>
+                    <p>Log in to take control of your finances today.</p>
+                </div>
 
-        // Function to toggle password visibility
-        function togglePasswordVisibility() {
-            showIcon.addEventListener("click", function() {
-                passwordField.type = "text";
-                showIcon.style.display = "none";
-                hideIcon.style.display = "inline-block";
-            });
+                <form id="loginForm">
+                    <div class="login_email">
+                        <label>Email</label>
+                        <input type="email" id="email" placeholder="Enter your email address" required>
+                    </div>
 
-            hideIcon.addEventListener("click", function() {
-                passwordField.type = "password";
-                hideIcon.style.display = "none";
-                showIcon.style.display = "inline-block";
-            });
-        }
+                    <div class="login_password_box">
+                        <label>Password</label>
+                        <div class="password_flex">
+                            <input type="password" id="password" placeholder="Enter your password" required>
+                            <img class="show" id="show" src="assets/images/show-eye.png" alt="show eye">
+                            <img class="hide" id="hide" src="assets/images/hide-eye.png" alt="hide eye">
+                        </div>
+                    </div>
 
-        // Function to enable the login button
-        function enableLoginButton() {
-            if (emailField.value.trim() !== "" && passwordField.value.trim() !== "") {
-                loginButton.disabled = false;
-            } else {
-                loginButton.disabled = true;
-            }
-        }
+                    <div class="login_flex">
+                        <button class="login_btn" type="submit" disabled>
+                            Login
+                        </button>
+                        <p>Forgot password? <a href="reset-password.html">Reset here</a></p>
+                    </div>
+                </form>
 
-        // Event listeners for the input fields
-        emailField.addEventListener("input", enableLoginButton);
-        passwordField.addEventListener("input", enableLoginButton);
+                <div class="login_bottom">
+                    <p>Don’t have an account? <a href="create-account.html">Create account</a></p>
+                </div>
 
-        // Initialize the functionality
-        togglePasswordVisibility();
+            </div>
+        </div>
+    </div>
 
-    </script>
+    <!-- mobile footer -->
+    <div class="mobile_login_footer">
+        <div class="mobile_login_footer_box">
+            <p>&copy; Paidley <span class="year"></span></p>
+            <div class="mobile_login_footer_right">
+                <a href="#">Help Center</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </div>
 
+</div>
+
+<!-- year -->
+<script>
+    document.querySelectorAll(".year").forEach(el => {
+        el.textContent = new Date().getFullYear();
+    });
+</script>
+
+<!-- login logic -->
+<script>
+    const emailField = document.getElementById("email");
+    const passwordField = document.getElementById("password");
+    const loginButton = document.querySelector(".login_btn");
+    const loginForm = document.getElementById("loginForm");
+    const showIcon = document.getElementById("show");
+    const hideIcon = document.getElementById("hide");
+
+    function togglePassword() {
+        showIcon.onclick = () => {
+            passwordField.type = "text";
+            showIcon.style.display = "none";
+            hideIcon.style.display = "inline-block";
+        };
+
+        hideIcon.onclick = () => {
+            passwordField.type = "password";
+            hideIcon.style.display = "none";
+            showIcon.style.display = "inline-block";
+        };
+    }
+
+    function enableButton() {
+        loginButton.disabled = !(emailField.value.trim() && passwordField.value.trim());
+    }
+
+    emailField.addEventListener("input", enableButton);
+    passwordField.addEventListener("input", enableButton);
+
+    loginForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        loginButton.disabled = true;
+        loginButton.innerHTML = `<span class="btn-spinner"></span>Logging in...`;
+
+        setTimeout(() => {
+            window.location.href = "client-dashboard/index.html";
+        }, 1500);
+    });
+
+    togglePassword();
+</script>
 
 </body>
 </html>
